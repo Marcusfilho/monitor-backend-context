@@ -1,84 +1,42 @@
-\# CONTEXT — Monitor Backend + SchemeBuilder Worker (Render + VM + Host Chrome)
+\# Monitor Backend + Worker — Contexto (fonte da verdade)
 
 
 
-> Objetivo do projeto: ter um \*\*APP/Backend/Worker\*\* estável para automatizar \*\*Assign Setting + Scheme Builder\*\* via \*\*WebSocket do Traffilog\*\*, com fila de jobs no backend (Render) e execução no worker (VM), usando credenciais capturadas no \*\*Chrome normal da Host\*\*.
+> \*\*Regra de ouro:\*\* este repositório (monitor-backend-context) é a referência do projeto.  
+
+> Quando houver conflito entre “memória do chat” e docs do repo, \*\*vale o repo\*\*.
 
 
 
----
+\## Estado atual (ATUALIZE A CADA SESSÃO)
+
+\- \*\*Data:\*\* 2026-01-01
+
+\- \*\*Objetivo da sessão:\*\* atualizar documentação + habilitar snapshots da VM no repo de contexto
+
+\- \*\*Status:\*\* OK
+
+\- \*\*Bloqueio atual:\*\* —
 
 
 
-\## 1) Premissas (NUNCA esquecer)
+\### Versões
 
-\- \*\*O Monitor (UI) não exibe token/cookie/infos críticas\*\* para debug/integração.
+\- \*\*monitor-backend (VM):\*\* branch=`(preencher)` sha=`(preencher)`
 
-\- Para operar o WS, precisamos capturar:
+\- \*\*monitor-backend-context (HOST):\*\* sha=`(preencher)`
 
-&nbsp; - \*\*WS Request URL\*\* (contém GUID + TOKEN na URL)
-
-&nbsp; - \*\*Origin\*\* do WS
-
-&nbsp; - (às vezes) \*\*Cookie\*\* ou outros headers que a UI usa
-
-\- \*\*Não queremos abrir Chrome em modo debug\*\*.
-
-\- Fluxo desejado no final:
-
-&nbsp; 1) Abrir o \*\*Monitor na Host (Chrome normal)\*\*
-
-&nbsp; 2) Rodar \*\*um script no Console\*\* que captura token/cookie/WS URL
-
-&nbsp; 3) Enviar isso para o \*\*backend no Render\*\*
-
-&nbsp; 4) A \*\*VM (worker)\*\* apenas roda e consome jobs do Render, sem “colar coisa” manualmente na VM.
+\- \*\*Render token status (última validação):\*\* `hasToken=true` `tokenLen=42` `path=/tmp/.session\_token` (HTTP 200)
 
 
 
----
+\### Próximos passos (1–3)
 
+1\) Consolidar este `context.md` no repo (commit/push na HOST)
 
+2\) Rodar VM Snapshot sempre que mudar worker/payload/WS
 
-\## 2) Arquitetura (como as peças se conectam)
-
-\### Componentes
-
-\- \*\*Host (Windows + Chrome normal)\*\*
-
-&nbsp; - Onde o Monitor (operation.traffilog.com) está logado.
-
-&nbsp; - Executa script de captura (Console) para extrair:
-
-&nbsp;   - WS URL (com GUID/TOKEN)
-
-&nbsp;   - Origin
-
-&nbsp;   - Cookie (se necessário)
-
-&nbsp; - Envia para o \*\*Render\*\* (HTTP POST) para armazenamento.
-
-
-
-\- \*\*Backend (Render)\*\*
-
-&nbsp; - Expõe endpoints:
-
-&nbsp;   - \*\*/api/jobs\*\* (fila / status)
-
-&nbsp;   - \*\*/api/scheme-builder/start\*\* (cria job)
-
-&nbsp;   - Rotas “admin” (quando existirem) para salvar token/cookie e/ou consultar estado.
-
-&nbsp; - Armazena “credenciais de sessão” (token/cookie/ws\_url) para os workers usarem.
-
-
-
-\- \*\*Worker (VM Ubuntu — systemd service)\*\*
-
-&nbsp; - Fica “ouvindo” o backend (poll/ACK) e executa jobs.
-
-&nbsp; - Abre WebSocket com `websocket.traffilog.com:8182` usando os dados capturados.
+3\) Manter `RUNBOOK.md` com checklist operacional (se ainda não existir, criar)
 
 
 
@@ -86,31 +44,11 @@
 
 
 
-\## 3) Informações críticas do WebSocket (descobertas)
+\## Objetivo
 
-\- O WS do Traffilog aparece como:
+\- \*\*Backend (Render):\*\* recebe requests do app, administra token, mantém fila de jobs.
 
-&nbsp; - `wss://websocket.traffilog.com:8182/<GUID>/<TOKEN>/json?defragment=1`
-
-\- No \*\*net-export (chrome://net-export)\*\*:
-
-&nbsp; - WS aparece com GET `/GUID/TOKEN/json?defragment=1`
-
-&nbsp; - \*\*Origin = https://operation.traffilog.com\*\*
-
-&nbsp; - Pode não aparecer `Cookie` no handshake (autenticação pode estar no TOKEN da URL).
-
-\- Opções importantes do net-export:
-
-&nbsp; - \*\*Include cookies and credentials = ON\*\*
-
-&nbsp; - \*\*Strip private information = OFF\*\*
-
-\- Conclusão prática:
-
-&nbsp; - Precisamos capturar e persistir pelo menos `WS\_URL` e `Origin`.
-
-&nbsp; - Cookie é “caso a caso”: se houver timeout/403/404, reavaliar necessidade.
+\- \*\*Worker (VM):\*\* consome jobs e executa ações no Monitor via \*\*WebSocket\*\*.
 
 
 
@@ -118,51 +56,179 @@
 
 
 
-\## 4) Ferramentas / scripts que já usamos
+\## Premissas (não-negociáveis)
 
-\### 4.1 Sniffer (Host Chrome Console)
+\- O Monitor (UI) \*\*NÃO exibe\*\* token/cookie/infos críticas para debug/integração.
 
-\- \*\*Sniffer SB2-SEND (WS amplo)\*\*:
+\- Payload das ações deve ser \*\*idêntico\*\* ao payload da UI (\*\*sem aproximação\*\*).
 
-&nbsp; - Hook em `WebSocket.prototype.send`
-
-&nbsp; - Filtra por chaves (vehicle\_id, action\_id, review/execute/associate etc.)
-
-&nbsp; - Decodifica `%...` com `decodeURIComponent` e tenta `JSON.parse`
-
-&nbsp; - Loga `ws\_url`, `action.name`, `flow\_id`, `root\_keys/param\_keys`,
-
-&nbsp;   `vehicle\_id/action\_id/process\_id/unit\_key/inner\_id` + `sample\_dec`
-
-\- \*\*Fallback\*\*: Sniffer via `window.fetch` e `XMLHttpRequest` para capturar execuções que não passam pelo WS.
+\- \*\*Não\*\* commitar segredos (token/cookie/admin keys). Em docs, use placeholders.
 
 
 
-> Esses sniffers foram salvos como referência para futuras automações além do SchemeBuilder.
+---
 
 
 
-\### 4.2 Net-export (Host)
-
-\- Método validado para capturar handshake do WS sem modo debug:
-
-&nbsp; - `chrome://net-export` → gerar log
-
-&nbsp; - Encontrar WS para `websocket.traffilog.com:8182` e copiar `Request URL`
+\## Arquitetura (visão rápida)
 
 
 
-\### 4.3 VM (worker side) — execução local
+App/Operação  
 
-\- Script utilitário:
+→ Backend (Render) \[API + job queue + token store]  
 
-&nbsp; - `tools/run\_sb\_vm.sh` (invoca `node tools/sb\_run\_vm.js ...`)
+→ Worker (VM) \[poll jobs]  
 
-\- Script principal:
+→ Traffilog Monitor WS (websocket.traffilog.com:8182) \[frames associate/review/execute]
+
+
+
+---
+
+
+
+\## Repositórios e onde ficam (HOST vs VM)
+
+\- \*\*HOST (Windows):\*\* repo de contexto  
+
+&nbsp; - path: `C:\\Projetos\\monitor-backend-context`
+
+&nbsp; - repo: `Marcusfilho/monitor-backend-context`
+
+\- \*\*VM (Linux):\*\* repo do sistema (backend/worker)  
+
+&nbsp; - path: `~/monitor-backend`
+
+&nbsp; - repo: `Marcusfilho/monitor-backend`
+
+
+
+> A ideia é: \*\*doc vive na HOST\*\*, e a \*\*VM publica snapshots\*\* (arquivos novos) no repo de contexto.
+
+
+
+---
+
+
+
+\## Endpoints e ações (mapa)
+
+\### Auth (api-il)
+
+\- `user\_login` → obtém `session\_token` (usado para acessar o WS)
+
+
+
+\### Backend (Render)
+
+\- `POST /api/scheme-builder/start` → cria job
+
+\- `GET  /api/jobs/<id>` → status/result do job
+
+\- `GET  /api/admin/session-token/status` → status do token (protegido por admin key)
+
+\- `POST /api/admin/session-token` → atualizar token (protegido por admin key)
+
+
+
+\### WebSocket (Traffilog Monitor)
+
+\- Host típico: `wss://websocket.traffilog.com:8182/<GUID>/<TOKEN>/json?defragment=1`
+
+\- Frames típicos do fluxo:
+
+&nbsp; - `associate\_vehicles\_actions\_opr`
+
+&nbsp; - `get\_vcls\_action\_review\_opr`
+
+&nbsp; - `execute\_action\_opr`
+
+
+
+Campos sensíveis (costumam causar 403/timeout):
+
+\- `flow\_id`, `mtkn`, `\_action\_name`, `call\_num`, `action\_source`
+
+\- tipos \*\*string vs number\*\* (muito importante)
+
+
+
+---
+
+
+
+\## Variáveis de ambiente (inventário)
+
+> \*\*Nunca commitar segredos.\*\* Guardar em `.env` local / Render env vars / override systemd.
+
+
+
+\### Backend (Render)
+
+\- `ADMIN\_KEY=...` (para endpoints `/api/admin/\*`)
+
+\- `TRAFFILOG\_LOGIN\_NAME=...`
+
+\- `TRAFFILOG\_PASSWORD=...`
+
+\- `TRAFFILOG\_APP\_GUID=...`
+
+\- `TRAFFILOG\_APP\_VER=1`
+
+
+
+\### Worker (VM)
+
+\- `BASE\_URL=https://monitor-backend-...onrender.com`
+
+\- tuning/timeouts (quando aplicável): `WS\_WAIT\_TIMEOUT\_MS=...`
+
+
+
+---
+
+
+
+\## Onde mexer no código (mapa rápido)
+
+> \*\*Confirmar com grep\*\* quando mover/refatorar.
+
+
+
+\- Rotas admin token:
+
+&nbsp; - `src/routes/adminRoutes.ts` (ex.: `/api/admin/session-token/status`)
+
+\- Token store:
+
+&nbsp; - `src/services/sessionTokenStore.ts` (ou equivalente)
+
+\- Fluxo SchemeBuilder / WS:
+
+&nbsp; - `src/services/schemeBuilderService.ts`
+
+\- Worker runner:
+
+&nbsp; - `src/worker/schemeBuilderWorker.ts` (ou equivalente)
+
+\- Ferramentas de teste local:
 
 &nbsp; - `tools/sb\_run\_vm.js`
 
-&nbsp; - Faz handshake WS, manda frames, espera respostas por mtkn e executa sequência (Assign + Review + Execute).
+
+
+Greps úteis:
+
+```bash
+
+grep -RIn --exclude-dir=node\_modules --exclude-dir=dist "associate\_vehicles\_actions\_opr" src tools || true
+
+grep -RIn --exclude-dir=node\_modules --exclude-dir=dist "get\_vcls\_action\_review\_opr|execute\_action\_opr" src tools || true
+
+grep -RIn --exclude-dir=node\_modules --exclude-dir=dist "user\_login|session\_token|session-token" src tools || true
+
+```
 
 
 
@@ -170,57 +236,127 @@
 
 
 
-\## 5) Variáveis de ambiente (padrões)
-
-> (nomes podem variar conforme versão; manter estes como referência)
+\## Como testar (comandos canônicos)
 
 
 
-\- `MONITOR\_SESSION\_TOKEN`  
+\### HOST (Windows PowerShell) — Git do contexto
 
-&nbsp; Token/sessão que entra na WS\_URL (quando aplicável).
+Antes de editar:
 
+```powershell
 
+cd C:\\Projetos\\monitor-backend-context
 
-\- `MONITOR\_WS\_URL`  
+git pull
 
-&nbsp; Ex: `wss://websocket.traffilog.com:8182/<GUID>/<TOKEN>/json?defragment=1`
+git status -sb
 
-
-
-\- `MONITOR\_WS\_ORIGIN`  
-
-&nbsp; Normalmente: `https://operation.traffilog.com`
+```
 
 
 
-\- `MONITOR\_WS\_COOKIE`  
+Depois de editar:
 
-&nbsp; Se necessário (nem sempre aparece no net-export; usar apenas se for comprovadamente necessário).
+```powershell
 
+cd C:\\Projetos\\monitor-backend-context
 
+git add context.md README.md RUNBOOK.md
 
-\- `MONITOR\_WS\_PROTOCOL`  
+git commit -m "docs: update context (YYYY-MM-DD)"
 
-&nbsp; Se o servidor exigir subprotocol; caso contrário pode ficar vazio.
+git push
 
-
-
-\- `WS\_PASSWORD` / `MONITOR\_PASSWORD\_FILE`  
-
-&nbsp; Estratégia para senha (preferência atual: manter seguro e consistente; evitar exportar “bagunçado” em arquivos sem necessidade).
+```
 
 
 
-\- Worker:
+\### HOST (Windows PowerShell) — Token (admin)
 
-&nbsp; - `JOB\_SERVER\_BASE\_URL` (Render ou local)
 
-&nbsp; - `WORKER\_ID`
 
-&nbsp; - `BASE\_POLL\_INTERVAL\_MS`
+> No PowerShell, `curl` é alias de `Invoke-WebRequest`. Use `curl.exe`.
 
-&nbsp; - `WS\_WAIT\_TIMEOUT\_MS` (timeout de espera de resposta WS)
+
+
+```powershell
+
+$BASE = "https://monitor-backend-1pm8.onrender.com"
+
+$ADMIN\_KEY = "<SUA\_CHAVE>".Trim()
+
+
+
+curl.exe -sS -H ("x-admin-key: {0}" -f $ADMIN\_KEY) "$BASE/api/admin/session-token/status"
+
+```
+
+
+
+(Com debug, só quando der problema)
+
+```powershell
+
+curl.exe -sS -v -H ("x-admin-key: {0}" -f $ADMIN\_KEY) "$BASE/api/admin/session-token/status"
+
+```
+
+
+
+\### HOST (Windows PowerShell) — Start job / Job status
+
+```powershell
+
+$BASE = "https://monitor-backend-1pm8.onrender.com"
+
+
+
+$body = @{
+
+&nbsp; clientId = 218572
+
+&nbsp; clientName = "TransLima"
+
+&nbsp; vehicleId = 1940478
+
+&nbsp; vehicleSettingId = 5592
+
+&nbsp; comment = "run"
+
+} | ConvertTo-Json
+
+
+
+curl.exe -sS -X POST "$BASE/api/scheme-builder/start" -H "Content-Type: application/json" -d $body
+
+curl.exe -sS "$BASE/api/jobs/<id>"
+
+```
+
+
+
+\### VM (worker) — build + restart + logs
+
+```bash
+
+cd ~/monitor-backend
+
+git status -sb
+
+git rev-parse --abbrev-ref HEAD
+
+git rev-parse HEAD
+
+
+
+npm run build
+
+sudo systemctl restart monitor-schemebuilder-worker
+
+sudo journalctl -u monitor-schemebuilder-worker -n 80 --no-pager -o cat
+
+```
 
 
 
@@ -228,79 +364,97 @@
 
 
 
-\## 6) Principais problemas enfrentados e correções aplicadas
-
-\### 6.1 Timeout / “mtkn não retorna”
-
-Sintomas:
-
-\- Worker fica em `processing` por muito tempo
-
-\- Erro: timeout aguardando resposta do WS (ex.: 30s ou 3min inesperados)
+\## Ritual de Sync (para abrir qualquer chat “zerado”)
 
 
 
-Correções aplicadas:
+\### HOST SYNC PACK (cola no chat)
 
-\- Ajustes de parsing de resposta WS para reconhecer:
+```powershell
 
-&nbsp; - `response.properties.mtkn` (formato `action\_value`)
+cd C:\\Projetos\\monitor-backend-context
 
-&nbsp; - além de formatos antigos com `row/process\_id`
+git status -sb
 
-\- Ajustes para extrair `process\_id` quando o `review` retorna `data\[]`:
+git rev-parse HEAD
 
-&nbsp; - Fallbacks para pegar `process\_id` dentro de `response.properties.data\[]`
-
-
-
-Observação importante:
-
-\- Em um momento, o timeout esperado era \*\*15s\*\*, mas ficou \*\*30000ms / 3min\*\* por regressão.
-
-&nbsp; - Reforço: manter `WS\_WAIT\_TIMEOUT\_MS` coerente e fácil de auditar.
+git log -1 --oneline
 
 
 
-\### 6.2 Sequência correta: associate → process\_id → review
+$BASE = "https://monitor-backend-1pm8.onrender.com"
 
-A correção-chave recente foi garantir que:
+$ADMIN\_KEY = "<SUA\_CHAVE>".Trim()
 
-\- `mtknReview` (get\_vcls\_action\_review\_opr) seja disparado \*\*após\*\*:
+curl.exe -sS -H ("x-admin-key: {0}" -f $ADMIN\_KEY) "$BASE/api/admin/session-token/status"
 
-&nbsp; - `associate\_vehicles\_actions\_opr` retornar `process\_id`
+```
 
-\- Foi inserida/planejada uma função tipo `extractProcessId()` para padronizar isso.
+
+
+\### VM SYNC PACK (cola no chat quando o assunto for worker/WS)
+
+```bash
+
+cd ~/monitor-backend
+
+git status -sb
+
+git rev-parse HEAD
+
+sudo systemctl status monitor-schemebuilder-worker --no-pager -l | head -n 40
+
+sudo journalctl -u monitor-schemebuilder-worker -n 60 --no-pager -o cat
+
+```
+
+
+
+---
+
+
+
+\## Publicar “realidade da VM” no repo de contexto (snapshots)
+
+
+
+\### Objetivo
+
+Evitar editar manualmente o `context.md` para “provar estado da VM”: a VM publica arquivos novos em `sessions/vm/`.
+
+
+
+\### Na VM (com repo clonado): rodar
+
+```bash
+
+cd ~/monitor-backend-context
+
+./tools\_publish\_vm\_snapshot.sh
+
+```
 
 
 
 Resultado esperado:
 
-\- “review/associate” ficam consistentes e não entram em race condition.
+\- cria `sessions/vm/YYYY-MM-DD\_HHMMSS\_snapshot.md`
+
+\- dá `git commit` e `git push`
 
 
 
-\### 6.3 “Cache” / worker pegando código antigo
+\### Na HOST: puxar
 
-Sintomas:
+```powershell
 
-\- Após alterar arquivos e fazer build, o worker parece rodar “versão antiga”.
+cd C:\\Projetos\\monitor-backend-context
 
+git pull
 
+git log -1 --oneline
 
-Checklist operacional:
-
-\- Confirmar `npm run build` sem erro (dist atualizado)
-
-\- Confirmar `systemctl restart monitor-schemebuilder-worker`
-
-\- Conferir logs com:
-
-&nbsp; - `journalctl -u monitor-schemebuilder-worker -n 200 --no-pager -o cat`
-
-\- Garantir que o systemd service aponta para o \*\*node correto\*\* e para o \*\*arquivo dist correto\*\*
-
-\- Verificar se há dois services/overrides conflitando (ex.: override antigo mantendo path antigo)
+```
 
 
 
@@ -308,61 +462,41 @@ Checklist operacional:
 
 
 
-\## 7) Estado atual do projeto (última posição conhecida)
-
-\- Já conseguimos:
-
-&nbsp; - Capturar WS URL por net-export
-
-&nbsp; - Rodar `sb\_run\_vm.js` e abrir WS com sucesso
-
-&nbsp; - Enviar frames e receber mensagens `action\_value`
-
-&nbsp; - Avançar no fluxo até \*\*associate → process\_id → review\*\* após patches
-
-\- Ainda pendente / em validação:
-
-&nbsp; - Confirmar definitivamente se \*\*Cookie\*\* é necessário no handshake
-
-&nbsp; - Consolidar o “store” de token/ws\_url no Render para não depender de export manual na VM
-
-&nbsp; - Garantir que timeouts (15s) não regredem ao ajustar parsing
-
-&nbsp; - Limpar duplicidades/strings antigas no `sb\_run\_vm.js` (cleanup pendente)
+\## Captura do WS (Host Chrome) — net-export e sniffer
 
 
 
----
+\### Net-export (chrome://net-export)
+
+\- O WS costuma aparecer como GET `/GUID/TOKEN/json?defragment=1`
+
+\- \*\*Origin\*\* típico: `https://operation.traffilog.com`
+
+\- Pode não aparecer `Cookie` no handshake (auth pode estar no \*\*TOKEN da URL\*\*)
+
+\- Opções importantes:
+
+&nbsp; - \*\*Include cookies and credentials = ON\*\*
+
+&nbsp; - \*\*Strip private information = OFF\*\*
 
 
 
-\## 8) Comandos úteis (VM)
+\### Sniffer (Chrome Console)
 
-> Ajuste `BASE` conforme seu Render.
+\- Sniffer “WS amplo”: hook em `WebSocket.prototype.send`
 
+&nbsp; - filtra por chaves (vehicle\_id, action\_id, review/execute/associate etc.)
 
+&nbsp; - decodifica `%...` com `decodeURIComponent` e tenta `JSON.parse`
 
-\### 8.1 Build + restart
+&nbsp; - loga `ws\_url`, `action.name`, `flow\_id`, `root\_keys/param\_keys`, ids (vehicle/action/process/unit/inner)
 
-\- `npm run build`
-
-\- `sudo systemctl restart monitor-schemebuilder-worker`
-
-\- `sudo journalctl -u monitor-schemebuilder-worker -n 200 --no-pager -o cat`
+\- Fallback: sniffer via `window.fetch` e `XMLHttpRequest` quando a execução não passa pelo WS.
 
 
 
-\### 8.2 Teste rápido por script (VM)
-
-\- `node tools/sb\_run\_vm.js <clientId> <clientName> <vehicleId> <vehicleSettingId> "<comment>"`
-
-
-
-\### 8.3 Verificar env do processo (quando necessário)
-
-\- (com PID do service)
-
-\- `sudo tr '\\0' '\\n' < /proc/$PID/environ | grep -E '^(MONITOR\_WS\_URL|MONITOR\_WS\_COOKIE|MONITOR\_WS\_ORIGIN|MONITOR\_WS\_PROTOCOL)='`
+> \*\*Importante:\*\* o objetivo do sniffer é copiar o payload real e bater 1:1 no worker.
 
 
 
@@ -370,53 +504,47 @@ Checklist operacional:
 
 
 
-\## 9) Padrões e preferências do repo
-
-\- Busca padrão: `grep -RIn --exclude-dir=node\_modules --exclude-dir=dist ...`
-
-\- Evitar “colar tokens” em arquivos versionados.
-
-\- Centralizar credenciais no backend (Render) e manter VM só como executor.
+\## Troubleshooting (sintoma → causa provável → ação)
 
 
 
----
+\### 401 / unauthorized (admin endpoints)
+
+\- Causa: header `x-admin-key` ausente/errado.
+
+\- No PowerShell: usar `curl.exe` (não `curl`).
+
+\- Ação: testar com `curl.exe -v` para verificar se o header foi enviado.
 
 
 
-\## 10) Próximos passos sugeridos (para fechar o projeto “redondo”)
+\### 403 (forbidden) no WS
 
-1\) \*\*Host (Chrome)\*\*: script definitivo “captura e envia” (WS URL + Origin + Cookie se houver)
+\- Causa: payload divergente (tipos num/string; flow\_id/mtkn; \_action\_name; call\_num; action\_source).
 
-2\) \*\*Render\*\*: endpoint para salvar/atualizar credenciais (admin)
-
-3\) \*\*VM Worker\*\*: sempre buscar credenciais do Render no início do job
-
-4\) \*\*Hardening\*\*:
-
-&nbsp;  - Timeouts padronizados (15s)
-
-&nbsp;  - Logs curtos e acionáveis (mtkn + action + process\_id)
-
-&nbsp;  - Cleanup do `sb\_run\_vm.js` (sem duplicatas)
+\- Ação: comparar com payload capturado no sniffer (UI real), sem “inventar”.
 
 
 
----
+\### timeout aguardando resposta (WS)
+
+\- Causa: `waitRowByMtkn` falhando / mtkn mismatch / WS fechando.
+
+\- Ação: aumentar log do frame enviado + campos essenciais da resposta; validar onde vem `process\_id`.
 
 
 
-\## 11) Glossário rápido
+\### “Worker parece cacheado / usando dist velho”
 
-\- \*\*mtkn\*\*: token/identificador de mensagem/solicitação no WS
+\- Causas comuns:
 
-\- \*\*process\_id\*\*: id do processo criado/associado no fluxo (necessário para review/execute)
+&nbsp; - não rodou `npm run build`
 
-\- \*\*associate\*\*: etapa que vincula ação/veículo e geralmente retorna process\_id
+&nbsp; - não reiniciou systemd
 
-\- \*\*review\*\*: validação/preview do que será executado
+&nbsp; - serviço apontando para arquivo/dir antigo
 
-\- \*\*execute\*\*: execução efetiva da ação
+\- Ação: confirmar `git sha`, rebuild e restart; conferir `systemctl cat` e `systemctl show ... FragmentPath/DropInPaths`.
 
 
 
@@ -424,21 +552,23 @@ Checklist operacional:
 
 
 
-\## 12) Segurança (regras)
+\## Regras de segurança (sempre)
 
-\- Nunca commitar tokens/cookies.
+\- Nunca commitar tokens/cookies/admin keys.
 
-\- Em docs e prints, usar placeholders:
+\- Em docs, usar placeholders: `<TOKEN>`, `<GUID>`, `<COOKIE>`, `<ADMIN\_KEY>`.
 
-&nbsp; - `<TOKEN>`, `<GUID>`, `<COOKIE>`
-
-\- Preferir variáveis de ambiente ou store seguro no backend.
+\- Se salvar logs/snapshots, manter curtos e, quando possível, com redaction.
 
 
 
 ---
 
-Fim.
+
+
+\## Histórico de sessões (append)
+
+\- \*\*2026-01-01\*\* — Docs + setup snapshot VM | Resultado: token status OK na HOST (curl.exe) + snapshot VM publicado | Bloqueio: —
 
 
 
