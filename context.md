@@ -571,4 +571,38 @@ git log -1 --oneline
 \- \*\*2026-01-01\*\* — Docs + setup snapshot VM | Resultado: token status OK na HOST (curl.exe) + snapshot VM publicado | Bloqueio: —
 
 
+---
+
+
+## 2026-01-02 — sb_run_vm.js (VM) — WS autologin + execute OK
+
+Estado atual (OK):
+- Autologin via WebSocket funcionando: quando não existe token, faz `user_login` e salva em `/tmp/.session_token` (len ~42).
+- Execução destravada e validada: `get_vcls_action_review_opr` retorna `process_id`, e `execute_action_opr` retorna `action_value=0`.
+- Portal/Monitor registra corretamente e gera 2 processos por execução (igual ao uso manual):
+  1) Assign Setting
+  2) Run Scheme builder
+- Comentário é propagado para ambos os processos.
+
+Correções aplicadas:
+- Removido/evitado `associate_vehicles_actions_opr` extra que retornava `403 action forbidden`.
+- Fluxo de review/execute passou a usar `get_vcls_action_review_opr` direto (sem depender de associate para gerar process_id).
+- Tag de rastreio no comentário:
+  - `#rid=<run_id>` gerado no início da execução
+  - `#pid=<process_id>` anexado após obter o process_id
+  - Exemplo: `... #rid=1767373667936_b0eaa3 #pid=8891183`
+
+Comando de teste (VM):
+WS_DEBUG=1 node tools/sb_run_vm.js 218572 "TransLima" 1940478 5592 "manual test (associate+execute)"
+
+Resultado esperado no log:
+- `[sb] process_id = <número>`
+- `execute_action_opr enviado.`
+- `action_value=0`
+
+Observação:
+- Duplicidade aparente no histórico ocorre quando a execução é disparada mais de uma vez; agora é identificável via `#rid/#pid`.
+
+
+
 
