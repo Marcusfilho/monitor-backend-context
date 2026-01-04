@@ -604,5 +604,53 @@ Observação:
 - Duplicidade aparente no histórico ocorre quando a execução é disparada mais de uma vez; agora é identificável via `#rid/#pid`.
 
 
+## 2026-01-04 — Monitor Backend (VM Tunel) — G-Sensor / GS2 (403 “action forbidden”)
+
+### Regra permanente (arquitetura de autenticação)
+- **Sempre gerar/renovar `session_token` via HTTP `user_login`** (API Traffilog) antes de qualquer fluxo (SB, G-Sensor etc.).
+- Usar esse token em todas as requisições/WS. Evitar depender de captura manual de token/WS URL.
+- Não armazenar senha em arquivo: usar credenciais via env (`WS_LOGIN_NAME` / `WS_PASSWORD`).
+- Emitir aviso claro quando DNS/rota/VPN impedir acesso ao WebSocket.
+- Token cache em arquivo (ex.: `/tmp/.session_token`) pode ser apagado para forçar renovação.
+
+### Sintoma atual
+- Fluxo **SchemeBuilder (SB)** executa normalmente (exemplo):
+  - `get_client_vehicles_opr` → `vcls_check_opr` → `associate_vehicles_actions_opr` → `review_process_attributes` → `get_vcls_action_review_opr` → `execute_action_opr`
+  - Retornos com envelope padrão: `response.properties.action_value = "0"`.
+
+- Fluxo **G-Sensor (GS2)** não “entra” no Monitor e falha no WS:
+  - A maioria das actions do GS2 retorna **raw** `{ action_value: '403', error_description: 'action forbidden' }`.
+  - O erro fatal ocorre em `review_process_attributes` do GS2 (403).
+
+### Evidências (log típico)
+- No mesmo run:
+  - `[sb] << action_value msg: { response: { properties: { action_name: 'get_client_vehicles_opr', action_value: '0', data:[...] }}}`
+  - Mais tarde, dentro do GS2:
+    - `get_client_vehicles_opr` chamado novamente → retorna **403** (raw).
+    - `get_custom_command` / `associate_vehicles_actions_opr` / `review_process_attributes` → **403**.
+
+### Tentativas/patches já feitos (resumo)
+- **GS_ACTION_ID**: várias tentativas; brute-force + auto-discover (1..250) resultou em **403 para todos** ao chamar `associate_vehicles_actions_opr` no GS2.
+- `add_remove_custom_command` / `get_custom_command` / `associate_vehicles_actions_opr`: tentativa de ignorar 403 para “seguir fluxo”; mesmo assim quebra em `review_process_attributes` 403.
+- Tentativa de enriquecer payload com `unit_key/inner_id` (UI costuma enviar) falhou porque o GS2 não consegue buscar `get_client_vehicles_opr` (403) para extrair contexto.
+- Observação: `GS_DISCOVER` gerou flood e apareceu `MaxListenersExceededWarning` (loop de chamadas adicionando listeners).
+
+### Hipótese técnica mais provável
+- O **payload/contexto do GS2 não replica o que a UI envia** (campos adicionais/ordem/flags), levando o backend a negar as actions com 403.
+- Campos possivelmente exigidos no GS (observado em sniffers anteriores): `unit_key`, `inner_id`, `oid` e/ou outros metadados do comando/veículo.
+- `net-export` do Chrome não expõe payload do WSS (TLS), então não serve para reconstruir o frame real do GS.
+
+### Próximo passo (direção correta)
+1) Capturar o **frame real** do envio GS no portal (sniffer `WebSocket.prototype.send` já usado no projeto: SB2-SEND), filtrando por:
+   - `action_name`, `action_id`, `unit_key`, `inner_id`, `oid`, `review`, `execute`, `associate`, `vehicle_id`.
+2) Replicar no worker **exatamente** o payload da UI (mesmos campos e valores).
+3) Alternativa: cachear `get_client_vehicles_opr` do SB e reutilizar no GS2 para obter `unit_key/inner_id` (sem refetch no GS2), caso o backend permita.
+
+### Arquivos e ambiente
+- VM: `questar@Tunel`, Node.js v20.19.6
+- Arquivo principal de teste: `tools/sb_run_vm.js`
+- Teste padrão:
+  - `rm -f /tmp/.session_token`
+  - `WS_DEBUG=1 GS_ENABLE=1 GS_DELAY_MS=1500 GS_ACTION_ID=5 node tools/sb_run_vm.js 218572 "TransLima" 1940478 5592 "SB+GS test"`
 
 
