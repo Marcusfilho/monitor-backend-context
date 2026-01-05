@@ -654,3 +654,56 @@ Observação:
   - `WS_DEBUG=1 GS_ENABLE=1 GS_DELAY_MS=1500 GS_ACTION_ID=5 node tools/sb_run_vm.js 218572 "TransLima" 1940478 5592 "SB+GS test"`
 
 
+
+
+## Marco concluído — G-Sensor como "Run command" (GS2 CHROME_FLOW) ✅
+
+### Problema
+O envio de **Run command / G-Sensor** no portal não carrega `vehicle_id` no payload do comando.
+O vínculo com o veículo vem do "select" da UI: `vcls_check_opr` com `is_checked=1`.
+
+### Solução
+Implementado `GS2 CHROME_FLOW` em `tools/sb_run_vm.js` para replicar a sequência real do Chrome:
+
+1) `vcls_check_opr` (select vehicle)  
+   `{ client_id, vehicle_id, client_name, is_checked:"1" }`
+
+2) `associate_vehicles_actions_opr` (call_num=0)  
+   `{ client_id, client_name, action_source:"0", action_id:"5", call_num:"0" }`
+
+3) `get_custom_command`  
+   `{ client_id }`
+
+4) (opcional) `add_remove_custom_command` (quando "+add manual command")  
+   `{ client_id, acknowledge_needed:"1", command_syntax:"(...)", action_value:"0" }`
+
+5) `associate_vehicles_actions_opr` (call_num=1, keep_priority)  
+   `{ client_id, client_name, keep_priority:true, action_source:"0", action_id:"5", call_num:"1" }`
+
+6) `review_process_attributes` + `get_vcls_action_review_opr` -> extrai `process_id`  
+   - `review_process_attributes`: `{ client_id }`  
+   - `get_vcls_action_review_opr`: `{ client_id, client_name, action_source:"0" }`
+
+7) `execute_action_opr` (payload mínimo do portal)  
+   `{ tag:"loading_screen", client_id, action_source:"0", process_id, comment, toggle_check:"0" }`
+
+### Observação importante (ordem SB/CAN/GS)
+`execute_action_opr` do SB apenas **enfileira** o processo; o SB continua rodando em background.
+Por isso, o GS pode concluir e aparecer antes no histórico.
+No worker final, o pipeline será: **SB -> aguardar concluir -> validar CAN -> GS** (etapas separadas).
+
+### Variáveis de ambiente úteis
+- `GS_ENABLE=1`
+- `GS_ACTION_ID=5`
+- `GS_DELAY_MS=1500`
+- `GS_COMMAND_SYNTAX='(...)'` (para "+add manual command")
+- `GS_COMMENT_SUFFIX=' [GS]'` (dedup no código para evitar `[GS][GS]`)
+
+### Teste (VM)
+```bash
+rm -f /tmp/.session_token
+GS_ENABLE=1 GS_ACTION_ID=5 GS_DELAY_MS=1500 \
+GS_COMMENT_SUFFIX=" [GS]" \
+GS_COMMAND_SYNTAX='(o2w,44,C6140400000000000000040000000000000004000000)' \
+WS_DEBUG=1 \
+node tools/sb_run_vm.js 218572 "TransLima" 1940478 5592 "SB+GS test"

@@ -3,6 +3,25 @@
 ## Objetivo
 Checklist operacional para reproduzir testes, coletar evidˆncias e manter o hist¢rico do projeto.
 
+
+\- garantir token válido
+\- worker rodando com build atual
+\- job executando e retornando resultado
+\- caminho rápido para diagnosticar 403/timeout
+
+
+## Rotina rápida (toda vez que for rodar jobs)
+
+\### 1) Confirmar versão (VM)
+
+```bash
+cd ~/monitor-backend
+git rev-parse --abbrev-ref HEAD
+git rev-parse HEAD
+git status -sb
+npm run build
+
+
 ---
 
 ## VM (Tunel) - Rotina padrao de teste (SB + GS)
