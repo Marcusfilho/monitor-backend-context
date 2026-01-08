@@ -707,3 +707,30 @@ GS_COMMENT_SUFFIX=" [GS]" \
 GS_COMMAND_SYNTAX='(o2w,44,C6140400000000000000040000000000000004000000)' \
 WS_DEBUG=1 \
 node tools/sb_run_vm.js 218572 "TransLima" 1940478 5592 "SB+GS test"
+
+
+
+## Vehicle Monitor Snapshot — vm_snapshot_ws_v4.js (v4.7.2)
+
+Objetivo: criar um snapshot “espelho” do Vehicle Monitor com:
+- Header (online + dados reais)
+- Module State (inclui CAN0/CAN1/J1708/KEYPAD*)
+- Parameters (garantindo valores — via refresh/push)
+
+Pontos-chave:
+- Token fresh via user_login (HTTP) e WS URL fresh
+- vehicle_subscribe é fire-and-forget (sem mtkn)
+- Parameters: não encerra enquanto não houver valores (refresh_values > 0 ou count_with_value > 0)
+- Captura valores via action "refresh" / data_source contendo "UNIT_PARAM"
+- Debug de WS em /tmp/vm_ws_debug_<VID>_<ts>.json (amostra maior via WS_DEBUG_SAMPLE_LEN)
+
+Como rodar (VM):
+- Ajustar envs e executar:
+  - node tools/vm_snapshot_ws_v4.js <VEHICLE_ID> > /tmp/vm_snapshot_<VID>_v4.json
+
+Critério de sucesso do marco:
+- parameters_tab.count_with_value > 0 e/ou parameters_tab.refresh_values > 0
+- debug.params_refresh.reason == has_refresh_values (ou has_row_values)
+
+Artefato do marco:
+- ZIP em snapshots/ contendo tool + snapshot + ws_debug + evidências git.

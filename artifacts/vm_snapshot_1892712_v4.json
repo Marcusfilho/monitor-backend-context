@@ -1,0 +1,2279 @@
+{
+  "meta": {
+    "at": "2026-01-08T00:07:26.244Z",
+    "vehicle_id": 1892712,
+    "unit_key": "SPT:0000000913045799",
+    "note": "v4.7.2 require param values + explicit refresh"
+  },
+  "header": {
+    "client_id": "217226",
+    "vehicle_id": "1892712",
+    "license_nmbr": "PLD8337",
+    "ignition": "1",
+    "inner_id": "0000000913045799",
+    "unit_key": "SPT:0000000913045799",
+    "unit_type": "SPETROTEC",
+    "firmware": "A77 Read Write.14",
+    "vcl_manufacturer": "Scania",
+    "vcl_model": "P360LB-DC13.06-M-EG-6X2P",
+    "gps_last": "2026-01-07T23:57:36.0000000+00:00",
+    "gprs_last": "2026-01-08T00:07:17.35Z",
+    "driver_code": "",
+    "mileage": "",
+    "fuel_used": "",
+    "speed": "",
+    "engine_hours": "",
+    "latitude": "",
+    "longitude": "",
+    "satellites": "",
+    "gps_quality": ""
+  },
+  "header_raw": null,
+  "module_state": {
+    "relevant": [
+      {
+        "key": "CAN0",
+        "missing": false,
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "8",
+        "template_name": "module_state",
+        "module_descr": "CAN",
+        "sub_module_descr": "CAN0",
+        "color": "%23ff0000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "1",
+        "error_descr": "CAN_NO_ACTIVE_ERROR_CODE"
+      },
+      {
+        "key": "CAN1",
+        "missing": false,
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "9",
+        "template_name": "module_state",
+        "module_descr": "CAN",
+        "sub_module_descr": "CAN1",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "key": "J1708",
+        "missing": false,
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "14",
+        "template_name": "module_state",
+        "module_descr": "J1708",
+        "sub_module_descr": "J1708",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "key": "KEYPAD_DALLAS_IBUTTON",
+        "missing": false,
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "18",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_DALLAS_IBUTTON",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "key": "KEYPAD_RAMZOR",
+        "missing": false,
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "19",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_RAMZOR",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      }
+    ],
+    "rows": [
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "1",
+        "template_name": "module_state",
+        "module_descr": "ALCO_LOCK_MOUDLE_TYPE",
+        "sub_module_descr": "DCDC_FTDI_EXT_BOARD",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "2",
+        "template_name": "module_state",
+        "module_descr": "ALL",
+        "sub_module_descr": "ALL",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "3",
+        "template_name": "module_state",
+        "module_descr": "ALL",
+        "sub_module_descr": "ALL",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "4",
+        "template_name": "module_state",
+        "module_descr": "ALUKA",
+        "sub_module_descr": "IRMA_SUB_TYPE_4",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "5",
+        "template_name": "module_state",
+        "module_descr": "ALUKA",
+        "sub_module_descr": "SMART_ALUKA",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "6",
+        "template_name": "module_state",
+        "module_descr": "BLACKBOX",
+        "sub_module_descr": "BLACKBOX_MODULE",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "7",
+        "template_name": "module_state",
+        "module_descr": "BUMPER_DETECTION",
+        "sub_module_descr": "BUMPER_DETECTION_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "8",
+        "template_name": "module_state",
+        "module_descr": "CAN",
+        "sub_module_descr": "CAN0",
+        "color": "%23ff0000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "1",
+        "error_descr": "CAN_NO_ACTIVE_ERROR_CODE"
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "9",
+        "template_name": "module_state",
+        "module_descr": "CAN",
+        "sub_module_descr": "CAN1",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "10",
+        "template_name": "module_state",
+        "module_descr": "CAN",
+        "sub_module_descr": "other",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "11",
+        "template_name": "module_state",
+        "module_descr": "COLLISION",
+        "sub_module_descr": "COLLISION",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "12",
+        "template_name": "module_state",
+        "module_descr": "GPS",
+        "sub_module_descr": "ALL",
+        "color": "%23ff0000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "13",
+        "template_name": "module_state",
+        "module_descr": "GSENSOR",
+        "sub_module_descr": "GSENSOR_3D_WITH_FIFO",
+        "color": "%23ff0000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "14",
+        "template_name": "module_state",
+        "module_descr": "J1708",
+        "sub_module_descr": "J1708",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "15",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_3x2_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "16",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_4x3",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "17",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_6KEY_CIRCULAR_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "18",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_DALLAS_IBUTTON",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "19",
+        "template_name": "module_state",
+        "module_descr": "KEYPAD",
+        "sub_module_descr": "KEYPAD_RAMZOR",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "20",
+        "template_name": "module_state",
+        "module_descr": "MODEM",
+        "sub_module_descr": "MODEM_QUECTEL_BG600L_MODULE",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "21",
+        "template_name": "module_state",
+        "module_descr": "MOVON",
+        "sub_module_descr": "MOVON_FATIGUE_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "22",
+        "template_name": "module_state",
+        "module_descr": "MOVON",
+        "sub_module_descr": "MOVON_MDAS_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "23",
+        "template_name": "module_state",
+        "module_descr": "OBD",
+        "sub_module_descr": "OBD_CAN_BUS_ISO_15765",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "24",
+        "template_name": "module_state",
+        "module_descr": "other",
+        "sub_module_descr": "other",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "25",
+        "template_name": "module_state",
+        "module_descr": "other",
+        "sub_module_descr": "other",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "26",
+        "template_name": "module_state",
+        "module_descr": "other",
+        "sub_module_descr": "other",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "27",
+        "template_name": "module_state",
+        "module_descr": "OW_ADC12CH",
+        "sub_module_descr": "OW_ADC12CH",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "28",
+        "template_name": "module_state",
+        "module_descr": "PLL",
+        "sub_module_descr": "OBD_CAN_BUS_ISO_15765",
+        "color": "%23808080",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "29",
+        "template_name": "module_state",
+        "module_descr": "PLL",
+        "sub_module_descr": "OBD_CAN_BUS_ISO_15765",
+        "color": "%23808080",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "30",
+        "template_name": "module_state",
+        "module_descr": "POWER_SYSTEM",
+        "sub_module_descr": "BATTERY_CHARGER",
+        "color": "%23008000",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "1",
+        "active_color": "%23008000",
+        "was_ok": "1",
+        "was_ok_color": "%23008000",
+        "ok": "1",
+        "ok_color": "%23008000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "31",
+        "template_name": "module_state",
+        "module_descr": "RFTPMS",
+        "sub_module_descr": "RFTPMS_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "32",
+        "template_name": "module_state",
+        "module_descr": "TEMP",
+        "sub_module_descr": "TEMP0",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "33",
+        "template_name": "module_state",
+        "module_descr": "TEMP",
+        "sub_module_descr": "TEMP1",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "34",
+        "template_name": "module_state",
+        "module_descr": "TEMP",
+        "sub_module_descr": "TEMP2",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "35",
+        "template_name": "module_state",
+        "module_descr": "TicketMachine",
+        "sub_module_descr": "TICKET_MACHINE_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      },
+      {
+        "mtkn": "1767830842314_06b0ea3e9d2f6",
+        "id": "36",
+        "template_name": "module_state",
+        "module_descr": "WEIGHT_MACHINE",
+        "sub_module_descr": "WEIGHT_MACHINE_MODULE",
+        "color": "%23ffa500",
+        "last_update_date": "2026-01-07T23%3A57%3A00.0000000%2B00%3A00",
+        "active": "0",
+        "active_color": "%23ff0000",
+        "was_ok": "0",
+        "was_ok_color": "%23ff0000",
+        "ok": "0",
+        "ok_color": "%23ff0000",
+        "error": "0",
+        "error_descr": ""
+      }
+    ]
+  },
+  "parameters_tab": {
+    "count_opr": 201,
+    "count_with_value": 10,
+    "preview": [
+      {
+        "id": "00000118",
+        "name": null,
+        "value_raw": "149B49A1",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000119",
+        "name": null,
+        "value_raw": "12B1131C",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000122",
+        "name": null,
+        "value_raw": "39A38B6A",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001BE",
+        "name": null,
+        "value_raw": "0000404C",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002720",
+        "name": null,
+        "value_raw": "000000C4",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002723",
+        "name": null,
+        "value_raw": "000001C4",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002726",
+        "name": null,
+        "value_raw": "00000571",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000070CF",
+        "name": null,
+        "value_raw": "00056249",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000711F",
+        "name": null,
+        "value_raw": "00000084",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000099C6",
+        "name": null,
+        "value_raw": "00000000",
+        "last_update": null,
+        "source": null
+      }
+    ],
+    "rows": [
+      {
+        "id": "0000001F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000020",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000022",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000024",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000002A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000002E",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000002F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000031",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000032",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000034",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000035",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000036",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000037",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000038",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000003A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000003B",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000003C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000005F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000060",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000062",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000063",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000006F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000076",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000000A3",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000118",
+        "name": null,
+        "value_raw": "149B49A1",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000119",
+        "name": null,
+        "value_raw": "12B1131C",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000011C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000011D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000122",
+        "name": null,
+        "value_raw": "39A38B6A",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001BD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001BE",
+        "name": null,
+        "value_raw": "0000404C",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001BF",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001EE",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001F0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001F1",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001F2",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000001F3",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000020E",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000210",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000215",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000216",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000291",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000294",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000296",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000297",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000002FC",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000006FD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000007D5",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00000FB0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011C6",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011C8",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011CB",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011CD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011D0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011D2",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011D5",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011D7",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011DA",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000011DC",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00001FBC",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002710",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002711",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002712",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002713",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002714",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002715",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002717",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002718",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002719",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000271A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000271B",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000271C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000271F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002720",
+        "name": null,
+        "value_raw": "000000C4",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002723",
+        "name": null,
+        "value_raw": "000001C4",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002726",
+        "name": null,
+        "value_raw": "00000571",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002736",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00002EE5",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003435",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003437",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000343A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000343C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000343F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003441",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003444",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003446",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003449",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000344B",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003471",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003473",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003476",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003478",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000347B",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000347D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003480",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003482",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003485",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003487",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000354D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000354E",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003589",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000035F2",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000036B0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000036B1",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000036B2",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003840",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003842",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038EF",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038F1",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038F4",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038F6",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038F9",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038FB",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000038FE",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003900",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003903",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003905",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003908",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000390A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000390D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000390F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003912",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003914",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003917",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003919",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000391C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000391E",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003921",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003923",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003926",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003928",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000392B",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000392D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003930",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00003932",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004062",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004064",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000047AD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000047AE",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000047AF",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000047B0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000481A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004873",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000048FD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000048FF",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004902",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004904",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004907",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004909",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000490C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000490E",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004911",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004913",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004916",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004918",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004A38",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004A3C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004A3D",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004A3F",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004A41",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00004EF7",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050B4",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050B5",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050B6",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050B9",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050BA",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050BB",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050D7",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000050D8",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00006730",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000070CF",
+        "name": null,
+        "value_raw": "00056249",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00007101",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00007103",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00007104",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00007113",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000711F",
+        "name": null,
+        "value_raw": "00000084",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "00007DA4",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087AB",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087AC",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087AD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087B4",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087B5",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087B7",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087B8",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087DB",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087DC",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087DD",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087DE",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087E1",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087E2",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087E3",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000087E4",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "000099C6",
+        "name": null,
+        "value_raw": "00000000",
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000AF8C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000C1C0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000C1C1",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000C7B0",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000CB5C",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000CE25",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000D419",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      },
+      {
+        "id": "0000D41A",
+        "name": null,
+        "value_raw": null,
+        "last_update": null,
+        "source": null
+      }
+    ],
+    "refresh_values": 10
+  },
+  "debug": {
+    "ws_debug_path": "/tmp/vm_ws_debug_1892712_1767830818239.json",
+    "ws_wait_timeout_ms": 20000,
+    "ws_stream_debounce_ms": 700,
+    "ws_debug_sample_len": 2000,
+    "ignition_on": true,
+    "ignition_wait": {
+      "waited_ms": 1,
+      "ign_on": true
+    },
+    "target_time": "2026-01-08T00:07:17.350Z",
+    "tolerance_sec": 1800,
+    "max_attempts": 10,
+    "module_refresh": {
+      "reason": "fresh(diff_sec=617.35)",
+      "freshness": {
+        "ok": true,
+        "diff_sec": 617.35,
+        "max_update": "2026-01-07T23:57:00.000Z",
+        "used_relevant": true
+      }
+    },
+    "params_refresh": {
+      "reason": "has_refresh_values",
+      "freshness": {
+        "ok": false,
+        "diff_sec": null,
+        "max_update": null
+      }
+    },
+    "module_rows_found": 36,
+    "params_rows_found": 201,
+    "refresh_values": 10,
+    "collector_metrics": {
+      "parsed_ok": 240,
+      "parsed_fail": 8,
+      "stream_rows": 238,
+      "stream_starts": 4,
+      "refresh_params": 10,
+      "events": 484
+    },
+    "stream_keys": [
+      "1767830842008_7533609e2cda6",
+      "1767830842313_ccc8303c6292c",
+      "1767830842314_06b0ea3e9d2f6",
+      "1767830843778_65d0a57e32fc1"
+    ]
+  }
+}

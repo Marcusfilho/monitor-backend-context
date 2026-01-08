@@ -1,0 +1,1502 @@
+[
+  {
+    "t": "2026-01-08T00:07:22.315Z",
+    "dir": "out",
+    "len": 445,
+    "sample": "REQ:get_monitor_module_state"
+  },
+  {
+    "t": "2026-01-08T00:07:22.800Z",
+    "dir": "in",
+    "len": 141,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"vehicle_subscribe\",\"mtkn\":\"1767830842008_7533609e2cda6\",\"request_id\":\"5128624410145824864\",\"data\":["
+  },
+  {
+    "t": "2026-01-08T00:07:22.801Z",
+    "dir": "in",
+    "len": 142,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"send_quick_command\",\"mtkn\":\"1767830842313_ccc8303c6292c\",\"request_id\":\"5592359042361789200\",\"data\":["
+  },
+  {
+    "t": "2026-01-08T00:07:22.802Z",
+    "dir": "in",
+    "len": 148,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"get_monitor_module_state\",\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"request_id\":\"5021948567836183330\",\"data\":["
+  },
+  {
+    "t": "2026-01-08T00:07:22.802Z",
+    "dir": "in",
+    "len": 81,
+    "sample": "{\"mtkn\":\"1767830842313_ccc8303c6292c\",\"error_code\":\"1001\",\"error_description\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.802Z",
+    "dir": "in",
+    "len": 215,
+    "sample": "],\"action_value\":\"1001\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\",\"mtkn\":\"1767830842313_ccc8303c6292c\",\"action_records\":\"0\",\"action_db_duration\":\"20\",\"action_app_duration\":\"71\"}}}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.802Z",
+    "dir": "in",
+    "len": 382,
+    "sample": "{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"1\",\"template_name\":\"module_state\",\"module_descr\":\"ALCO_LOCK_MOUDLE_TYPE\",\"sub_module_descr\":\"DCDC_FTDI_EXT_BOARD\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.802Z",
+    "dir": "in",
+    "len": 349,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"2\",\"template_name\":\"module_state\",\"module_descr\":\"ALL\",\"sub_module_descr\":\"ALL\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.803Z",
+    "dir": "in",
+    "len": 349,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"3\",\"template_name\":\"module_state\",\"module_descr\":\"ALL\",\"sub_module_descr\":\"ALL\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.803Z",
+    "dir": "in",
+    "len": 363,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"4\",\"template_name\":\"module_state\",\"module_descr\":\"ALUKA\",\"sub_module_descr\":\"IRMA_SUB_TYPE_4\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.803Z",
+    "dir": "in",
+    "len": 359,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"5\",\"template_name\":\"module_state\",\"module_descr\":\"ALUKA\",\"sub_module_descr\":\"SMART_ALUKA\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.803Z",
+    "dir": "in",
+    "len": 366,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"6\",\"template_name\":\"module_state\",\"module_descr\":\"BLACKBOX\",\"sub_module_descr\":\"BLACKBOX_MODULE\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.804Z",
+    "dir": "in",
+    "len": 382,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"7\",\"template_name\":\"module_state\",\"module_descr\":\"BUMPER_DETECTION\",\"sub_module_descr\":\"BUMPER_DETECTION_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.804Z",
+    "dir": "in",
+    "len": 374,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"8\",\"template_name\":\"module_state\",\"module_descr\":\"CAN\",\"sub_module_descr\":\"CAN0\",\"color\":\"%23ff0000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"1\",\"error_descr\":\"CAN_NO_ACTIVE_ERROR_CODE\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.812Z",
+    "dir": "in",
+    "len": 350,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"9\",\"template_name\":\"module_state\",\"module_descr\":\"CAN\",\"sub_module_descr\":\"CAN1\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.812Z",
+    "dir": "in",
+    "len": 352,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"10\",\"template_name\":\"module_state\",\"module_descr\":\"CAN\",\"sub_module_descr\":\"other\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.876Z",
+    "dir": "in",
+    "len": 362,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"11\",\"template_name\":\"module_state\",\"module_descr\":\"COLLISION\",\"sub_module_descr\":\"COLLISION\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.877Z",
+    "dir": "in",
+    "len": 350,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"12\",\"template_name\":\"module_state\",\"module_descr\":\"GPS\",\"sub_module_descr\":\"ALL\",\"color\":\"%23ff0000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.878Z",
+    "dir": "in",
+    "len": 371,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"13\",\"template_name\":\"module_state\",\"module_descr\":\"GSENSOR\",\"sub_module_descr\":\"GSENSOR_3D_WITH_FIFO\",\"color\":\"%23ff0000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.890Z",
+    "dir": "in",
+    "len": 354,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"14\",\"template_name\":\"module_state\",\"module_descr\":\"J1708\",\"sub_module_descr\":\"J1708\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.891Z",
+    "dir": "in",
+    "len": 367,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"15\",\"template_name\":\"module_state\",\"module_descr\":\"KEYPAD\",\"sub_module_descr\":\"KEYPAD_3x2_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.891Z",
+    "dir": "in",
+    "len": 360,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"16\",\"template_name\":\"module_state\",\"module_descr\":\"KEYPAD\",\"sub_module_descr\":\"KEYPAD_4x3\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.892Z",
+    "dir": "in",
+    "len": 377,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"17\",\"template_name\":\"module_state\",\"module_descr\":\"KEYPAD\",\"sub_module_descr\":\"KEYPAD_6KEY_CIRCULAR_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.893Z",
+    "dir": "in",
+    "len": 371,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"18\",\"template_name\":\"module_state\",\"module_descr\":\"KEYPAD\",\"sub_module_descr\":\"KEYPAD_DALLAS_IBUTTON\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.893Z",
+    "dir": "in",
+    "len": 363,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"19\",\"template_name\":\"module_state\",\"module_descr\":\"KEYPAD\",\"sub_module_descr\":\"KEYPAD_RAMZOR\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.893Z",
+    "dir": "in",
+    "len": 376,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"20\",\"template_name\":\"module_state\",\"module_descr\":\"MODEM\",\"sub_module_descr\":\"MODEM_QUECTEL_BG600L_MODULE\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.894Z",
+    "dir": "in",
+    "len": 369,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"21\",\"template_name\":\"module_state\",\"module_descr\":\"MOVON\",\"sub_module_descr\":\"MOVON_FATIGUE_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.895Z",
+    "dir": "in",
+    "len": 366,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"22\",\"template_name\":\"module_state\",\"module_descr\":\"MOVON\",\"sub_module_descr\":\"MOVON_MDAS_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.896Z",
+    "dir": "in",
+    "len": 368,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"23\",\"template_name\":\"module_state\",\"module_descr\":\"OBD\",\"sub_module_descr\":\"OBD_CAN_BUS_ISO_15765\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.896Z",
+    "dir": "in",
+    "len": 354,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"24\",\"template_name\":\"module_state\",\"module_descr\":\"other\",\"sub_module_descr\":\"other\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.897Z",
+    "dir": "in",
+    "len": 354,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"25\",\"template_name\":\"module_state\",\"module_descr\":\"other\",\"sub_module_descr\":\"other\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.897Z",
+    "dir": "in",
+    "len": 354,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"26\",\"template_name\":\"module_state\",\"module_descr\":\"other\",\"sub_module_descr\":\"other\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.897Z",
+    "dir": "in",
+    "len": 364,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"27\",\"template_name\":\"module_state\",\"module_descr\":\"OW_ADC12CH\",\"sub_module_descr\":\"OW_ADC12CH\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.898Z",
+    "dir": "in",
+    "len": 368,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"28\",\"template_name\":\"module_state\",\"module_descr\":\"PLL\",\"sub_module_descr\":\"OBD_CAN_BUS_ISO_15765\",\"color\":\"%23808080\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:22.899Z",
+    "dir": "in",
+    "len": 368,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"29\",\"template_name\":\"module_state\",\"module_descr\":\"PLL\",\"sub_module_descr\":\"OBD_CAN_BUS_ISO_15765\",\"color\":\"%23808080\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.028Z",
+    "dir": "in",
+    "len": 371,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"30\",\"template_name\":\"module_state\",\"module_descr\":\"POWER_SYSTEM\",\"sub_module_descr\":\"BATTERY_CHARGER\",\"color\":\"%23008000\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"1\",\"active_color\":\"%23008000\",\"was_ok\":\"1\",\"was_ok_color\":\"%23008000\",\"ok\":\"1\",\"ok_color\":\"%23008000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.028Z",
+    "dir": "in",
+    "len": 363,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"31\",\"template_name\":\"module_state\",\"module_descr\":\"RFTPMS\",\"sub_module_descr\":\"RFTPMS_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.028Z",
+    "dir": "in",
+    "len": 353,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"32\",\"template_name\":\"module_state\",\"module_descr\":\"TEMP\",\"sub_module_descr\":\"TEMP0\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.029Z",
+    "dir": "in",
+    "len": 353,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"33\",\"template_name\":\"module_state\",\"module_descr\":\"TEMP\",\"sub_module_descr\":\"TEMP1\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.029Z",
+    "dir": "in",
+    "len": 353,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"34\",\"template_name\":\"module_state\",\"module_descr\":\"TEMP\",\"sub_module_descr\":\"TEMP2\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.073Z",
+    "dir": "in",
+    "len": 378,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"35\",\"template_name\":\"module_state\",\"module_descr\":\"TicketMachine\",\"sub_module_descr\":\"TICKET_MACHINE_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.073Z",
+    "dir": "in",
+    "len": 379,
+    "sample": ",{\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"id\":\"36\",\"template_name\":\"module_state\",\"module_descr\":\"WEIGHT_MACHINE\",\"sub_module_descr\":\"WEIGHT_MACHINE_MODULE\",\"color\":\"%23ffa500\",\"last_update_date\":\"2026-01-07T23%3A57%3A00.0000000%2B00%3A00\",\"active\":\"0\",\"active_color\":\"%23ff0000\",\"was_ok\":\"0\",\"was_ok_color\":\"%23ff0000\",\"ok\":\"0\",\"ok_color\":\"%23ff0000\",\"error\":\"0\",\"error_descr\":\"\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.073Z",
+    "dir": "in",
+    "len": 213,
+    "sample": "],\"action_value\":\"0\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\",\"mtkn\":\"1767830842314_06b0ea3e9d2f6\",\"action_records\":\"36\",\"action_db_duration\":\"41\",\"action_app_duration\":\"76\"}}}"
+  },
+  {
+    "t": "2026-01-08T00:07:23.778Z",
+    "dir": "out",
+    "len": 408,
+    "sample": "REQ:get_unit_parameters_opr"
+  },
+  {
+    "t": "2026-01-08T00:07:24.054Z",
+    "dir": "in",
+    "len": 147,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"get_unit_parameters_opr\",\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"request_id\":\"4938233788339667819\",\"data\":["
+  },
+  {
+    "t": "2026-01-08T00:07:24.103Z",
+    "dir": "in",
+    "len": 216,
+    "sample": "],\"action_value\":\"0\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\",\"mtkn\":\"1767830842008_7533609e2cda6\",\"action_records\":\"0\",\"action_db_duration\":\"1730\",\"action_app_duration\":\"1810\"}}}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.128Z",
+    "dir": "in",
+    "len": 202,
+    "sample": "{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"1\",\"id\":\"0000001F\",\"param_type\":\"31\",\"param_type_descr\":\"J1939%20EBS%20Red%20Warning%20Signal\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.129Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"2\",\"id\":\"00000020\",\"param_type\":\"32\",\"param_type_descr\":\"J1939%20Brake%20Pedal%20Position%20%28521%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.129Z",
+    "dir": "in",
+    "len": 237,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"3\",\"id\":\"00000022\",\"param_type\":\"34\",\"param_type_descr\":\"J1939%20ABS%2FEBS%20Amber%20Warning%20Signal%20%28Powered%20Vehicle%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.130Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"4\",\"id\":\"00000024\",\"param_type\":\"36\",\"param_type_descr\":\"J1939%20Engine%20Oil%20Pressure%20%28100%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.130Z",
+    "dir": "in",
+    "len": 220,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"5\",\"id\":\"0000002A\",\"param_type\":\"42\",\"param_type_descr\":\"J1939%20Accelerator%20Pedal%20Position%201%20%2891%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.131Z",
+    "dir": "in",
+    "len": 218,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"6\",\"id\":\"0000002E\",\"param_type\":\"46\",\"param_type_descr\":\"J1939%20Engine%20Fuel%20Temperature%201%20%28174%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.131Z",
+    "dir": "in",
+    "len": 217,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"7\",\"id\":\"0000002F\",\"param_type\":\"47\",\"param_type_descr\":\"J1939%20Engine%20Coolant%20Temperature%20%28110%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.131Z",
+    "dir": "in",
+    "len": 203,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"8\",\"id\":\"00000031\",\"param_type\":\"49\",\"param_type_descr\":\"J1939%20Engine%20Total%20Fuel%20Used\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.131Z",
+    "dir": "in",
+    "len": 191,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"9\",\"id\":\"00000032\",\"param_type\":\"50\",\"param_type_descr\":\"J1939%20Fuel%20Level%201\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.131Z",
+    "dir": "in",
+    "len": 216,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"10\",\"id\":\"00000034\",\"param_type\":\"52\",\"param_type_descr\":\"J1939%20Wheel-based%20Vehicle%20Speed%20%2884%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.132Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"11\",\"id\":\"00000035\",\"param_type\":\"53\",\"param_type_descr\":\"J1939%20PTO%20Governor%20State%20%28976%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.132Z",
+    "dir": "in",
+    "len": 200,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"12\",\"id\":\"00000036\",\"param_type\":\"54\",\"param_type_descr\":\"J1939%20Parking%20Brake%20Switch\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.132Z",
+    "dir": "in",
+    "len": 202,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"13\",\"id\":\"00000037\",\"param_type\":\"55\",\"param_type_descr\":\"J1939%20Brake%20Switch%20%28597%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.133Z",
+    "dir": "in",
+    "len": 191,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"14\",\"id\":\"00000038\",\"param_type\":\"56\",\"param_type_descr\":\"J1939%20Clutch%20Switch\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.133Z",
+    "dir": "in",
+    "len": 214,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"15\",\"id\":\"0000003A\",\"param_type\":\"58\",\"param_type_descr\":\"J1939%20Engine%20Speed%20%28rpm%29%20%28190%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.133Z",
+    "dir": "in",
+    "len": 226,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"16\",\"id\":\"0000003B\",\"param_type\":\"59\",\"param_type_descr\":\"1939%20Engine%20Total%20Hours%20of%20Operation%20%28247%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.133Z",
+    "dir": "in",
+    "len": 208,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"17\",\"id\":\"0000003C\",\"param_type\":\"60\",\"param_type_descr\":\"J1939%20Engine%20Fuel%20Rate%20%28183%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.134Z",
+    "dir": "in",
+    "len": 187,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"18\",\"id\":\"0000005F\",\"param_type\":\"95\",\"param_type_descr\":\"Amber%20Warn%20Lamp\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.134Z",
+    "dir": "in",
+    "len": 185,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"19\",\"id\":\"00000060\",\"param_type\":\"96\",\"param_type_descr\":\"Red%20Stop%20Lamp\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.134Z",
+    "dir": "in",
+    "len": 258,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"20\",\"id\":\"00000062\",\"param_type\":\"98\",\"param_type_descr\":\"J1939%20Service%20Brake%20Circuit%201%20Air%20Pressure%20%28primary%20%2F%20rear%20axle%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.134Z",
+    "dir": "in",
+    "len": 261,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"21\",\"id\":\"00000063\",\"param_type\":\"99\",\"param_type_descr\":\"J1939%20Service%20Brake%20Circuit%202%20Air%20Pressure%20%28secondary%20%2F%20front%20axle%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.135Z",
+    "dir": "in",
+    "len": 230,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"22\",\"id\":\"0000006F\",\"param_type\":\"111\",\"param_type_descr\":\"J1939%20Nominal%20Friction%20-%20Percent%20Torque%20%28514%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.135Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"23\",\"id\":\"00000076\",\"param_type\":\"118\",\"param_type_descr\":\"J1939%20Gross%20Combination%20Vehicle%20Weight%20%281760%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.135Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"24\",\"id\":\"000000A3\",\"param_type\":\"163\",\"param_type_descr\":\"J1939%20Actual%20Engine%20-%20Percent%20Torque%20%28513%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.135Z",
+    "dir": "in",
+    "len": 176,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"25\",\"id\":\"00000118\",\"param_type\":\"280\",\"param_type_descr\":\"GPS_Lat\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.312Z",
+    "dir": "in",
+    "len": 176,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"26\",\"id\":\"00000119\",\"param_type\":\"281\",\"param_type_descr\":\"GPS_Lon\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.312Z",
+    "dir": "in",
+    "len": 186,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"27\",\"id\":\"0000011C\",\"param_type\":\"284\",\"param_type_descr\":\"J1939%20DTC%20Raw\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.312Z",
+    "dir": "in",
+    "len": 180,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"28\",\"id\":\"0000011D\",\"param_type\":\"285\",\"param_type_descr\":\"J1939%20DTC\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.313Z",
+    "dir": "in",
+    "len": 178,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"29\",\"id\":\"00000122\",\"param_type\":\"290\",\"param_type_descr\":\"GPS%20Odo\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.313Z",
+    "dir": "in",
+    "len": 182,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"30\",\"id\":\"000001BD\",\"param_type\":\"445\",\"param_type_descr\":\"Event%20Score\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.313Z",
+    "dir": "in",
+    "len": 181,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"31\",\"id\":\"000001BE\",\"param_type\":\"446\",\"param_type_descr\":\"Trip%20Score\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.313Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"32\",\"id\":\"000001BF\",\"param_type\":\"447\",\"param_type_descr\":\"Scheme%20Output%201-Engine%20Was%20Running\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.353Z",
+    "dir": "in",
+    "len": 233,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"33\",\"id\":\"000001EE\",\"param_type\":\"494\",\"param_type_descr\":\"Scheme%20Output%205%20-%20Bulk%20Charging%20Should%20be%20Active\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.353Z",
+    "dir": "in",
+    "len": 180,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"34\",\"id\":\"000001F0\",\"param_type\":\"496\",\"param_type_descr\":\"Unit%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.353Z",
+    "dir": "in",
+    "len": 187,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"35\",\"id\":\"000001F1\",\"param_type\":\"497\",\"param_type_descr\":\"Calc%20Idle%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.354Z",
+    "dir": "in",
+    "len": 209,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"36\",\"id\":\"000001F2\",\"param_type\":\"498\",\"param_type_descr\":\"Calc%20J1939%20total%20idle%20fuel%20use\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.354Z",
+    "dir": "in",
+    "len": 190,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"37\",\"id\":\"000001F3\",\"param_type\":\"499\",\"param_type_descr\":\"MBU%20MTST%20Ignition\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.354Z",
+    "dir": "in",
+    "len": 178,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"38\",\"id\":\"0000020E\",\"param_type\":\"526\",\"param_type_descr\":\"OBD%20DTC\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.354Z",
+    "dir": "in",
+    "len": 190,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"39\",\"id\":\"00000210\",\"param_type\":\"528\",\"param_type_descr\":\"Scheme%20Output%20528\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.355Z",
+    "dir": "in",
+    "len": 232,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"40\",\"id\":\"00000215\",\"param_type\":\"533\",\"param_type_descr\":\"Scheme%20Output%20533%201h%20of%20rest%20after%20ignition%20off\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.355Z",
+    "dir": "in",
+    "len": 235,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"41\",\"id\":\"00000216\",\"param_type\":\"534\",\"param_type_descr\":\"Scheme%20Output%20534%20-%20Air%20pressure%20less%20than%207%20bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.355Z",
+    "dir": "in",
+    "len": 187,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"42\",\"id\":\"00000291\",\"param_type\":\"657\",\"param_type_descr\":\"Calc%20Trip%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.355Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"43\",\"id\":\"00000294\",\"param_type\":\"660\",\"param_type_descr\":\"Calc%20Trip%20Idle%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.356Z",
+    "dir": "in",
+    "len": 201,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"44\",\"id\":\"00000296\",\"param_type\":\"662\",\"param_type_descr\":\"Calc%20Trip%20Idle%20Fuel%20Used\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.356Z",
+    "dir": "in",
+    "len": 229,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"45\",\"id\":\"00000297\",\"param_type\":\"663\",\"param_type_descr\":\"Scheme%20Output%20663%20-%20internal%20for%20start%20driving\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.356Z",
+    "dir": "in",
+    "len": 187,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"46\",\"id\":\"000002FC\",\"param_type\":\"764\",\"param_type_descr\":\"High_Res_Unit_Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.356Z",
+    "dir": "in",
+    "len": 219,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"47\",\"id\":\"000006FD\",\"param_type\":\"1789\",\"param_type_descr\":\"Scheme%20Output%201789%20PTO%20Active%20%28201%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.357Z",
+    "dir": "in",
+    "len": 203,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"48\",\"id\":\"000007D5\",\"param_type\":\"2005\",\"param_type_descr\":\"J1939%20Cruise%20Control%20Active\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.357Z",
+    "dir": "in",
+    "len": 203,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"49\",\"id\":\"00000FB0\",\"param_type\":\"4016\",\"param_type_descr\":\"MBU-V2%20MTST%20Battery%20Voltage\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.357Z",
+    "dir": "in",
+    "len": 234,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"50\",\"id\":\"000011C6\",\"param_type\":\"4550\",\"param_type_descr\":\"Scheme%20Output%204550%20Air%20pneumatic%20pressure%20%3C%206Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.357Z",
+    "dir": "in",
+    "len": 265,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"51\",\"id\":\"000011C8\",\"param_type\":\"4552\",\"param_type_descr\":\"Calc%20Scheme%20Output%204550%20Trip%20Driving%20Time%20Air%20pneumatic%20pressure%20%3C%206Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.357Z",
+    "dir": "in",
+    "len": 237,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"52\",\"id\":\"000011CB\",\"param_type\":\"4555\",\"param_type_descr\":\"Scheme%20Output%204555%20Air%20pneumatic%20pressure%20%3E6%3C8.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.358Z",
+    "dir": "in",
+    "len": 268,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"53\",\"id\":\"000011CD\",\"param_type\":\"4557\",\"param_type_descr\":\"Calc%20Scheme%20Output%204555%20Trip%20Driving%20Time%20Air%20pneumatic%20pressure%20%3E6%3C8.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.358Z",
+    "dir": "in",
+    "len": 242,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"54\",\"id\":\"000011D0\",\"param_type\":\"4560\",\"param_type_descr\":\"Scheme%20Output%204560%20Air%20pneumatic%20pressure%20%3E%208.5%3C9.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.358Z",
+    "dir": "in",
+    "len": 273,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"55\",\"id\":\"000011D2\",\"param_type\":\"4562\",\"param_type_descr\":\"Calc%20Scheme%20Output%204560%20Trip%20Driving%20Time%20Air%20pneumatic%20pressure%20%3E%208.5%3C9.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.358Z",
+    "dir": "in",
+    "len": 240,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"56\",\"id\":\"000011D5\",\"param_type\":\"4565\",\"param_type_descr\":\"Scheme%20Output%204565%20Air%20pneumatic%20pressure%20%3E%209.5%3C10.5\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.358Z",
+    "dir": "in",
+    "len": 271,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"57\",\"id\":\"000011D7\",\"param_type\":\"4567\",\"param_type_descr\":\"Calc%20Scheme%20Output%204565%20Trip%20Driving%20Time%20Air%20pneumatic%20pressure%20%3E%209.5%3C10.5\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 237,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"58\",\"id\":\"000011DA\",\"param_type\":\"4570\",\"param_type_descr\":\"Scheme%20Output%204570%20Air%20pneumatic%20pressure%20%3E%2010.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 268,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"59\",\"id\":\"000011DC\",\"param_type\":\"4572\",\"param_type_descr\":\"Calc%20Scheme%20Output%204570%20Trip%20Driving%20Time%20Air%20pneumatic%20pressure%20%3E%2010.5Bar\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 234,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"60\",\"id\":\"00001FBC\",\"param_type\":\"8124\",\"param_type_descr\":\"J1939%20Engine%20Intake%20Manifold%201%20Temperature%20%28105%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 193,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"61\",\"id\":\"00002710\",\"param_type\":\"10000\",\"param_type_descr\":\"Sys%20Param%20Ignition\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 206,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"62\",\"id\":\"00002711\",\"param_type\":\"10001\",\"param_type_descr\":\"Sys%20Param%20Ignition%20No%20Delay\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 202,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"63\",\"id\":\"00002712\",\"param_type\":\"10002\",\"param_type_descr\":\"Sys%20Param%20Battery%20Voltage\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.359Z",
+    "dir": "in",
+    "len": 190,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"64\",\"id\":\"00002713\",\"param_type\":\"10003\",\"param_type_descr\":\"Sys%20Param%20Speed\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 203,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"65\",\"id\":\"00002714\",\"param_type\":\"10004\",\"param_type_descr\":\"Sys%20Param%20Vehicle%20Distance\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 188,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"66\",\"id\":\"00002715\",\"param_type\":\"10005\",\"param_type_descr\":\"Sys%20Param%20RPM\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 197,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"67\",\"id\":\"00002717\",\"param_type\":\"10007\",\"param_type_descr\":\"Sys%20Param%20Fuel%20Level\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 196,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"68\",\"id\":\"00002718\",\"param_type\":\"10008\",\"param_type_descr\":\"Sys%20Param%20Fuel%20Rate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"69\",\"id\":\"00002719\",\"param_type\":\"10009\",\"param_type_descr\":\"Sys%20Param%20Total%20Fuel%20Used\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.360Z",
+    "dir": "in",
+    "len": 202,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"70\",\"id\":\"0000271A\",\"param_type\":\"10010\",\"param_type_descr\":\"Sys%20Param%20Acc%20Pedal%20Pos\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 199,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"71\",\"id\":\"0000271B\",\"param_type\":\"10011\",\"param_type_descr\":\"Sys%20Param%20Brake%20Switch\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 200,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"72\",\"id\":\"0000271C\",\"param_type\":\"10012\",\"param_type_descr\":\"Sys%20Param%20Clutch%20Switch\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 199,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"73\",\"id\":\"0000271F\",\"param_type\":\"10015\",\"param_type_descr\":\"Sys%20Param%20Coolant%20Temp\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"74\",\"id\":\"00002720\",\"param_type\":\"10016\",\"param_type_descr\":\"Sys%20Param%20Actual%20Percent%20Torque\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 199,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"75\",\"id\":\"00002723\",\"param_type\":\"10019\",\"param_type_descr\":\"Sys%20Param%20Oil%20Pressure\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 202,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"76\",\"id\":\"00002726\",\"param_type\":\"10022\",\"param_type_descr\":\"Sys%20Param%20Ignition%20Source\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.361Z",
+    "dir": "in",
+    "len": 209,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"77\",\"id\":\"00002736\",\"param_type\":\"10038\",\"param_type_descr\":\"J1939%20Malfunction%20Indicator%20Lamp\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.362Z",
+    "dir": "in",
+    "len": 219,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"78\",\"id\":\"00002EE5\",\"param_type\":\"12005\",\"param_type_descr\":\"Scheme%20Output%2012005%20-%20Rainy%20Conditions\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.362Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"79\",\"id\":\"00003435\",\"param_type\":\"13365\",\"param_type_descr\":\"Calc%20Output%2013365%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.362Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"80\",\"id\":\"00003437\",\"param_type\":\"13367\",\"param_type_descr\":\"A.Calc%2013365%20Trig%20Driving%20Time%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.362Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"81\",\"id\":\"0000343A\",\"param_type\":\"13370\",\"param_type_descr\":\"Calc%20Outputs%2013370%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.363Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"82\",\"id\":\"0000343C\",\"param_type\":\"13372\",\"param_type_descr\":\"B.Calc%2013370%20Trip%20Driving%20Time%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.363Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"83\",\"id\":\"0000343F\",\"param_type\":\"13375\",\"param_type_descr\":\"Calc%20Output%2013375%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.572Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"84\",\"id\":\"00003441\",\"param_type\":\"13377\",\"param_type_descr\":\"C.Calc%2013375%20Trip%20Driving%20Time%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.572Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"85\",\"id\":\"00003444\",\"param_type\":\"13380\",\"param_type_descr\":\"Calc%20Output%2013380%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.572Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"86\",\"id\":\"00003446\",\"param_type\":\"13382\",\"param_type_descr\":\"D.Calc%2013380%20Trip%20Driving%20Time%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.572Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"87\",\"id\":\"00003449\",\"param_type\":\"13385\",\"param_type_descr\":\"Calc%20Output%2013385%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.572Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"88\",\"id\":\"0000344B\",\"param_type\":\"13387\",\"param_type_descr\":\"E.Calc%2013385%20Trip%20Driving%20Time%20301%20Chart%204\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"89\",\"id\":\"00003471\",\"param_type\":\"13425\",\"param_type_descr\":\"Scheme%20Output%2013425\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"90\",\"id\":\"00003473\",\"param_type\":\"13427\",\"param_type_descr\":\"Calc%20Scheme%20Output%2013425%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"91\",\"id\":\"00003476\",\"param_type\":\"13430\",\"param_type_descr\":\"Scheme%20Output%2013430\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"92\",\"id\":\"00003478\",\"param_type\":\"13432\",\"param_type_descr\":\"Calc%20Scheme%20Output%2013430%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"93\",\"id\":\"0000347B\",\"param_type\":\"13435\",\"param_type_descr\":\"Scheme%20Output%2013435\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"94\",\"id\":\"0000347D\",\"param_type\":\"13437\",\"param_type_descr\":\"Calc%20Scheme%20Output%2013435%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"95\",\"id\":\"00003480\",\"param_type\":\"13440\",\"param_type_descr\":\"Scheme%20Output%2013440\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.573Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"96\",\"id\":\"00003482\",\"param_type\":\"13442\",\"param_type_descr\":\"Calc%20Scheme%20Output%2013440%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 194,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"97\",\"id\":\"00003485\",\"param_type\":\"13445\",\"param_type_descr\":\"Scheme%20Output%2013445\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"98\",\"id\":\"00003487\",\"param_type\":\"13447\",\"param_type_descr\":\"Calc%20Scheme%20Output%2013445%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 240,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"99\",\"id\":\"0000354D\",\"param_type\":\"13645\",\"param_type_descr\":\"Scheme%20Output%2013645%20Cruise%20distance%20from%20total%20distance\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 227,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"100\",\"id\":\"0000354E\",\"param_type\":\"13646\",\"param_type_descr\":\"13645%20-%20Cruise%20distance%20from%20total%20distance\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"101\",\"id\":\"00003589\",\"param_type\":\"13705\",\"param_type_descr\":\"Scheme%20Output%2013705\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 213,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"102\",\"id\":\"000035F2\",\"param_type\":\"13810\",\"param_type_descr\":\"Scheme%20Output%2013810%20-%20Wipers%20On\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 222,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"103\",\"id\":\"000036B0\",\"param_type\":\"14000\",\"param_type_descr\":\"Scheme%20Output%2014000%20For%20battery%20analysis\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.574Z",
+    "dir": "in",
+    "len": 230,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"104\",\"id\":\"000036B1\",\"param_type\":\"14001\",\"param_type_descr\":\"Calc%20Scheme%20Output%2014000%20Trip%20Driving%20Distance\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 226,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"105\",\"id\":\"000036B2\",\"param_type\":\"14002\",\"param_type_descr\":\"Calc%20Scheme%20Output%2014000%20Trip%20Driving%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 190,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"106\",\"id\":\"00003840\",\"param_type\":\"14400\",\"param_type_descr\":\"14400-PTO%20Switch\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 254,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"107\",\"id\":\"00003842\",\"param_type\":\"14402\",\"param_type_descr\":\"Calc%20Scheme%20Output%2014400%20Trip%20Driving%20Time%20201%20-%20Pto%20on%20time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"108\",\"id\":\"000038EF\",\"param_type\":\"14575\",\"param_type_descr\":\"Scheme%20Output%2014575\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 222,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"109\",\"id\":\"000038F1\",\"param_type\":\"14577\",\"param_type_descr\":\"14575%20-%20L-K-J%20Vehicle%20speed%20limiter-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"110\",\"id\":\"000038F4\",\"param_type\":\"14580\",\"param_type_descr\":\"Scheme%20Output%2014580\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.575Z",
+    "dir": "in",
+    "len": 216,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"111\",\"id\":\"000038F6\",\"param_type\":\"14582\",\"param_type_descr\":\"14580%20-%20H-I%20Highway%20high%20load-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"112\",\"id\":\"000038F9\",\"param_type\":\"14585\",\"param_type_descr\":\"Scheme%20Output%2014585\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 213,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"113\",\"id\":\"000038FB\",\"param_type\":\"14587\",\"param_type_descr\":\"14585%20-%20G%20highway%20low%20load-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"114\",\"id\":\"000038FE\",\"param_type\":\"14590\",\"param_type_descr\":\"Scheme%20Output%2014590\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 230,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"115\",\"id\":\"00003900\",\"param_type\":\"14592\",\"param_type_descr\":\"14590%20-%20D-E-F%20City%20short%20trip%20High%20load-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"116\",\"id\":\"00003903\",\"param_type\":\"14595\",\"param_type_descr\":\"Scheme%20Output%2014595\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.576Z",
+    "dir": "in",
+    "len": 232,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"117\",\"id\":\"00003905\",\"param_type\":\"14597\",\"param_type_descr\":\"14595%20-%20D-E-F%20City%20short%20trip%20Low%20load%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"118\",\"id\":\"00003908\",\"param_type\":\"14600\",\"param_type_descr\":\"Scheme%20Output%2014600\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 206,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"119\",\"id\":\"0000390A\",\"param_type\":\"14602\",\"param_type_descr\":\"14600-%20A%20low%20idle%20%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"120\",\"id\":\"0000390D\",\"param_type\":\"14605\",\"param_type_descr\":\"Scheme%20Output%2014605\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 210,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"121\",\"id\":\"0000390F\",\"param_type\":\"14607\",\"param_type_descr\":\"14605%20-%20B-C%20Pto%20Active%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"122\",\"id\":\"00003912\",\"param_type\":\"14610\",\"param_type_descr\":\"Scheme%20Output%2014610\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 251,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"123\",\"id\":\"00003914\",\"param_type\":\"14612\",\"param_type_descr\":\"14610%20-%20Region%20D-G-J%20Low%20load%20%26%20engine%20brake%20active%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.577Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"124\",\"id\":\"00003917\",\"param_type\":\"14615\",\"param_type_descr\":\"Scheme%20Output%2014615\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.578Z",
+    "dir": "in",
+    "len": 242,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"125\",\"id\":\"00003919\",\"param_type\":\"14617\",\"param_type_descr\":\"14615%20-%20Region%20H%20High%20engine%20speed%20low%20load%20%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.578Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"126\",\"id\":\"0000391C\",\"param_type\":\"14620\",\"param_type_descr\":\"Scheme%20Output%2014620\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.578Z",
+    "dir": "in",
+    "len": 217,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"127\",\"id\":\"0000391E\",\"param_type\":\"14622\",\"param_type_descr\":\"14620%20-%20Region%20A-B%20Low%20load%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.578Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"128\",\"id\":\"00003921\",\"param_type\":\"14625\",\"param_type_descr\":\"Scheme%20Output%2014625\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.578Z",
+    "dir": "in",
+    "len": 235,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"129\",\"id\":\"00003923\",\"param_type\":\"14627\",\"param_type_descr\":\"14625%20-%20Region%20E-F%20Optimal%20fuel%20consumption%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"130\",\"id\":\"00003926\",\"param_type\":\"14630\",\"param_type_descr\":\"Scheme%20Output%2014630\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 232,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"131\",\"id\":\"00003928\",\"param_type\":\"14632\",\"param_type_descr\":\"14630%20-%20Region%20L-K%20High%20fuel%20consumption%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"132\",\"id\":\"0000392B\",\"param_type\":\"14635\",\"param_type_descr\":\"Scheme%20Output%2014635\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 230,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"133\",\"id\":\"0000392D\",\"param_type\":\"14637\",\"param_type_descr\":\"14635%20-%20Region%20I%20High%20fuel%20consumption%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"134\",\"id\":\"00003930\",\"param_type\":\"14640\",\"param_type_descr\":\"Scheme%20Output%2014640\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.579Z",
+    "dir": "in",
+    "len": 230,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"135\",\"id\":\"00003932\",\"param_type\":\"14642\",\"param_type_descr\":\"14640%20-%20Region%20C%20High%20fuel%20consumption%20-Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 197,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"136\",\"id\":\"00004062\",\"param_type\":\"16482\",\"param_type_descr\":\"Vehicle%20Warning%20Light\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 203,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"137\",\"id\":\"00004064\",\"param_type\":\"16484\",\"param_type_descr\":\"J1939%20Protect%20Lamp%20Status\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 179,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"138\",\"id\":\"000047AD\",\"param_type\":\"18349\",\"param_type_descr\":\"GPS_Alt\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 201,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"139\",\"id\":\"000047AE\",\"param_type\":\"18350\",\"param_type_descr\":\"Average%20rpm%20per%20trip%20\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 190,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"140\",\"id\":\"000047AF\",\"param_type\":\"18351\",\"param_type_descr\":\"Trip%20Avg%20Speed\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 208,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"141\",\"id\":\"000047B0\",\"param_type\":\"18352\",\"param_type_descr\":\"Average%20GCW%20%28if%20available%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.580Z",
+    "dir": "in",
+    "len": 267,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"142\",\"id\":\"0000481A\",\"param_type\":\"18458\",\"param_type_descr\":\"Scheme%20Output%2018458%20-%20Brake%20Pedal%20pressed%20above%2010%20seconds%20speed%2030km%2Fh\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.581Z",
+    "dir": "in",
+    "len": 238,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"143\",\"id\":\"00004873\",\"param_type\":\"18547\",\"param_type_descr\":\"Calc%20Trip%20Avg%20J1939%20Actual%20Engine%20-%20Percent%20Torque\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.581Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"144\",\"id\":\"000048FD\",\"param_type\":\"18685\",\"param_type_descr\":\"Calc%20Output%2018685%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.792Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"145\",\"id\":\"000048FF\",\"param_type\":\"18687\",\"param_type_descr\":\"A.Calc%2018685%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"146\",\"id\":\"00004902\",\"param_type\":\"18690\",\"param_type_descr\":\"Calc%20Output%2018690%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"147\",\"id\":\"00004904\",\"param_type\":\"18692\",\"param_type_descr\":\"B.Calc%2018690%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"148\",\"id\":\"00004907\",\"param_type\":\"18695\",\"param_type_descr\":\"Calc%20Output%2018695%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"149\",\"id\":\"00004909\",\"param_type\":\"18697\",\"param_type_descr\":\"C.Calc%2018695%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"150\",\"id\":\"0000490C\",\"param_type\":\"18700\",\"param_type_descr\":\"Calc%20Output%2018700%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.793Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"151\",\"id\":\"0000490E\",\"param_type\":\"18702\",\"param_type_descr\":\"D.Calc%2018700%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.794Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"152\",\"id\":\"00004911\",\"param_type\":\"18705\",\"param_type_descr\":\"Calc%20Output%2018705%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.794Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"153\",\"id\":\"00004913\",\"param_type\":\"18707\",\"param_type_descr\":\"E.Calc%2018705%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.794Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"154\",\"id\":\"00004916\",\"param_type\":\"18710\",\"param_type_descr\":\"Calc%20Output%2018710%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.795Z",
+    "dir": "in",
+    "len": 228,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"155\",\"id\":\"00004918\",\"param_type\":\"18712\",\"param_type_descr\":\"F.Calc%2018710%20Trip%20Driving%20Time%20301%20Chart%205\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.795Z",
+    "dir": "in",
+    "len": 223,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"156\",\"id\":\"00004A38\",\"param_type\":\"19000\",\"param_type_descr\":\"Scheme%20Output%2019000%20Brake%20pedal%20activated\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.795Z",
+    "dir": "in",
+    "len": 220,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"157\",\"id\":\"00004A3C\",\"param_type\":\"19004\",\"param_type_descr\":\"19000%20Trip%20Count%20Brake%20pedal%20activated\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.795Z",
+    "dir": "in",
+    "len": 209,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"158\",\"id\":\"00004A3D\",\"param_type\":\"19005\",\"param_type_descr\":\"Scheme%20Output%2019005%20Stop%20time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.795Z",
+    "dir": "in",
+    "len": 198,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"159\",\"id\":\"00004A3F\",\"param_type\":\"19007\",\"param_type_descr\":\"19005%20Trip%20Stop%20Time\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 198,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"160\",\"id\":\"00004A41\",\"param_type\":\"19009\",\"param_type_descr\":\"19005%20Count%20of%20stops\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 244,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"161\",\"id\":\"00004EF7\",\"param_type\":\"20215\",\"param_type_descr\":\"Scheme%20Output%2020215%20-%20Coolant%20temperature%20above%20107%CB%9AC\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 208,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"162\",\"id\":\"000050B4\",\"param_type\":\"20660\",\"param_type_descr\":\"Scheme%20Output%2020660-Acceleration\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 243,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"163\",\"id\":\"000050B5\",\"param_type\":\"20661\",\"param_type_descr\":\"Calc%20Scheme%20Output%2020660%20Trip%20Driving%20Distance-Acceleration\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 239,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"164\",\"id\":\"000050B6\",\"param_type\":\"20662\",\"param_type_descr\":\"Calc%20Scheme%20Output%2020660%20Trip%20Driving%20Time-Acceleration\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.796Z",
+    "dir": "in",
+    "len": 207,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"165\",\"id\":\"000050B9\",\"param_type\":\"20665\",\"param_type_descr\":\"Scheme%20Output%2020665%20-Coasting\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 242,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"166\",\"id\":\"000050BA\",\"param_type\":\"20666\",\"param_type_descr\":\"Calc%20Scheme%20Output%2020665%20Trip%20Driving%20Distance%20-Coasting\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 238,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"167\",\"id\":\"000050BB\",\"param_type\":\"20667\",\"param_type_descr\":\"Calc%20Scheme%20Output%2020665%20Trip%20Driving%20Time%20-Coasting\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 246,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"168\",\"id\":\"000050D7\",\"param_type\":\"20695\",\"param_type_descr\":\"Scheme%20Output%2020695-Global%20Brake%20press%20for%20Avg%20brake%20press\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 207,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"169\",\"id\":\"000050D8\",\"param_type\":\"20696\",\"param_type_descr\":\"20695%20Time-Global%20Brake%20press\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 238,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"170\",\"id\":\"00006730\",\"param_type\":\"26416\",\"param_type_descr\":\"TFL%20Calc%20Min%20MBU-V2%20MTST%20Battery%20Voltage%20engine%20on\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.797Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"171\",\"id\":\"000070CF\",\"param_type\":\"28879\",\"param_type_descr\":\"Sys%20Param%20Engine%20Total%20Hours%20of%20Operation\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.798Z",
+    "dir": "in",
+    "len": 216,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"172\",\"id\":\"00007101\",\"param_type\":\"28929\",\"param_type_descr\":\"TFL%20Processed%20Sys%20Param%20Fuel%20Level\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.798Z",
+    "dir": "in",
+    "len": 244,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"173\",\"id\":\"00007103\",\"param_type\":\"28931\",\"param_type_descr\":\"TFL%20Calc%20Fuel%20Fill%20From%20Processed%20Sys%20Param%20Fuel%20Level\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.798Z",
+    "dir": "in",
+    "len": 244,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"174\",\"id\":\"00007104\",\"param_type\":\"28932\",\"param_type_descr\":\"TFL%20Calc%20Fuel%20Drop%20From%20Processed%20Sys%20Param%20Fuel%20Level\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.798Z",
+    "dir": "in",
+    "len": 195,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"175\",\"id\":\"00007113\",\"param_type\":\"28947\",\"param_type_descr\":\"Req%20J1939%20VIN%20No.\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.798Z",
+    "dir": "in",
+    "len": 224,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"176\",\"id\":\"0000711F\",\"param_type\":\"28959\",\"param_type_descr\":\"Sys%20Param%20Brake%201%20Air%20Pressure%20%28Bar%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 232,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"177\",\"id\":\"00007DA4\",\"param_type\":\"32164\",\"param_type_descr\":\"20695%20-%20Avg%20Time%20global%20brake%20press%20per%20trip\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"178\",\"id\":\"000087AB\",\"param_type\":\"34731\",\"param_type_descr\":\"Gate%20%28DAFA%29%20EMS%2FEngine\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 205,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"179\",\"id\":\"000087AC\",\"param_type\":\"34732\",\"param_type_descr\":\"Value%20%28DAFA%29%20EMS%2FEngine\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 212,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"180\",\"id\":\"000087AD\",\"param_type\":\"34733\",\"param_type_descr\":\"Scania%20DTC%20EMS%20%28KWP2000%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 212,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"181\",\"id\":\"000087B4\",\"param_type\":\"34740\",\"param_type_descr\":\"Scania%20DTC%20GMS%20%28KWP2000%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.799Z",
+    "dir": "in",
+    "len": 212,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"182\",\"id\":\"000087B5\",\"param_type\":\"34741\",\"param_type_descr\":\"Scania%20DTC%20BMS%20%28KWP2000%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 212,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"183\",\"id\":\"000087B7\",\"param_type\":\"34743\",\"param_type_descr\":\"Scania%20DTC%20COO%20%28KWP2000%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 212,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"184\",\"id\":\"000087B8\",\"param_type\":\"34744\",\"param_type_descr\":\"Scania%20DTC%20APS%20%28KWP2000%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"185\",\"id\":\"000087DB\",\"param_type\":\"34779\",\"param_type_descr\":\"Scania%20GMS%20%28DAFA%29%20Gate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 205,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"186\",\"id\":\"000087DC\",\"param_type\":\"34780\",\"param_type_descr\":\"Scania%20GMS%20%28DAFA%29%20Value\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"187\",\"id\":\"000087DD\",\"param_type\":\"34781\",\"param_type_descr\":\"Scania%20BMS%20%28DAFA%29%20Gate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.800Z",
+    "dir": "in",
+    "len": 205,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"188\",\"id\":\"000087DE\",\"param_type\":\"34782\",\"param_type_descr\":\"Scania%20BMS%20%28DAFA%29%20Value\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.801Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"189\",\"id\":\"000087E1\",\"param_type\":\"34785\",\"param_type_descr\":\"Scania%20COO%20%28DAFA%29%20Gate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.801Z",
+    "dir": "in",
+    "len": 205,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"190\",\"id\":\"000087E2\",\"param_type\":\"34786\",\"param_type_descr\":\"Scania%20COO%20%28DAFA%29%20Value\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.801Z",
+    "dir": "in",
+    "len": 204,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"191\",\"id\":\"000087E3\",\"param_type\":\"34787\",\"param_type_descr\":\"Scania%20APS%20%28DAFA%29%20Gate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.801Z",
+    "dir": "in",
+    "len": 205,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"192\",\"id\":\"000087E4\",\"param_type\":\"34788\",\"param_type_descr\":\"Scania%20APS%20%28DAFA%29%20Value\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.802Z",
+    "dir": "in",
+    "len": 211,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"193\",\"id\":\"000099C6\",\"param_type\":\"39366\",\"param_type_descr\":\"Sys%20Param%20HandBrake%20%2F%20Parking\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.802Z",
+    "dir": "in",
+    "len": 196,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"194\",\"id\":\"0000AF8C\",\"param_type\":\"44940\",\"param_type_descr\":\"ARM%20Analog%20input%203\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.802Z",
+    "dir": "in",
+    "len": 208,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"195\",\"id\":\"0000C1C0\",\"param_type\":\"49600\",\"param_type_descr\":\"Scania%20DTC%20APS%20%28UDS%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.803Z",
+    "dir": "in",
+    "len": 208,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"196\",\"id\":\"0000C1C1\",\"param_type\":\"49601\",\"param_type_descr\":\"Scania%20DTC%20BMS%20%28UDS%20DTC%29\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.805Z",
+    "dir": "in",
+    "len": 256,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"197\",\"id\":\"0000C7B0\",\"param_type\":\"51120\",\"param_type_descr\":\"J1939%20Total%20Vehicle%20Distance%20%28High%20Resolution%29%20%28917%29%20SA%3A0xEE\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.806Z",
+    "dir": "in",
+    "len": 225,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"198\",\"id\":\"0000CB5C\",\"param_type\":\"52060\",\"param_type_descr\":\"Calc%20Total%20Fuel%20Used%20From%20Sys%20Fuel%20Rate\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.806Z",
+    "dir": "in",
+    "len": 229,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"199\",\"id\":\"0000CE25\",\"param_type\":\"52773\",\"param_type_descr\":\"ARM%20Analog%20input%204%20-%20Backup%20Battery%20voltage\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.806Z",
+    "dir": "in",
+    "len": 200,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"200\",\"id\":\"0000D419\",\"param_type\":\"54297\",\"param_type_descr\":\"Scania%20Windshield%20Wipers\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.806Z",
+    "dir": "in",
+    "len": 200,
+    "sample": ",{\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"index\":\"201\",\"id\":\"0000D41A\",\"param_type\":\"54298\",\"param_type_descr\":\"Scania%20Windshield%20Wipers\",\"multiply_param\":\"0\",\"multiply_inner\":\"\",\"view_schemes\":\"1\"}"
+  },
+  {
+    "t": "2026-01-08T00:07:24.807Z",
+    "dir": "in",
+    "len": 214,
+    "sample": "],\"action_value\":\"0\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\",\"mtkn\":\"1767830843778_65d0a57e32fc1\",\"action_records\":\"201\",\"action_db_duration\":\"29\",\"action_app_duration\":\"81\"}}}"
+  },
+  {
+    "t": "2026-01-08T00:07:25.911Z",
+    "dir": "in",
+    "len": 551,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"refresh\",\"data_source\":\"UNIT_PARAMETERS\",\"mtkn\":\"-1\",\"data\":[{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00000122\",\"paramvalue\":\"39A38B6A\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"39A38B6A\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"000001BE\",\"paramvalue\":\"0000404C\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"0000404C\"}],\"action_value\":\"0\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\"}}}"
+  },
+  {
+    "t": "2026-01-08T00:07:25.913Z",
+    "dir": "in",
+    "len": 1595,
+    "sample": "{\"response\":{\"properties\":{\"action_name\":\"refresh\",\"data_source\":\"UNIT_PARAMETERS\",\"mtkn\":\"-1\",\"data\":[{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00002720\",\"paramvalue\":\"000000C4\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"000000C4\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00002723\",\"paramvalue\":\"000001C4\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"000001C4\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00002726\",\"paramvalue\":\"00000571\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"00000571\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"000070CF\",\"paramvalue\":\"00056249\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"00056249\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"0000711F\",\"paramvalue\":\"00000084\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"00000084\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"000099C6\",\"paramvalue\":\"00000000\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"00000000\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00000118\",\"paramvalue\":\"149B49A1\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"149B49A1\"},{\"orig_time\":\"2026-01-08T00:07:23Z\",\"unitType\":\"SPT\",\"inner_id\":\"0000000913045799\",\"id\":\"00000119\",\"paramvalue\":\"12B1131C\",\"paramsource\":\"FF\",\"\":\"\",\"param_value\":\"12B1131C\"}],\"action_value\":\"0\",\"description\":\"\",\"session_token\":\"2e7b25ff923941c6b55355db44469cf64602800485\"}}}"
+  }
+]
